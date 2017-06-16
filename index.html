@@ -12,6 +12,31 @@
 		<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 		<script src="js/calc.js"></script>
+		<script src="animsition/js/animsition.js"></script>
+		<script>
+			$(document).ready(function() {
+			  $(".animsition").animsition({
+				inClass: 'fade-in',
+				outClass: 'fade-out',
+				inDuration: 1500,
+				outDuration: 800,
+				linkElement: '.animsition-link',
+				// e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+				loading: true,
+				loadingParentElement: 'body', //animsition wrapper element
+				loadingClass: 'animsition-loading',
+				loadingInner: '', // e.g '<img src="loading.svg" />'
+				timeout: false,
+				timeoutCountdown: 5000,
+				onLoadEvent: true,
+				browser: [ 'animation-duration', '-webkit-animation-duration'],
+				overlay : false,
+				overlayClass : 'animsition-overlay-slide',
+				overlayParentElement : 'body',
+				transition: function(url){ window.location.href = url; }
+			  });
+			});
+		</script>
 	</head>
 	
 	<body class="animsition">
@@ -251,6 +276,21 @@
 				});
 			});
 		</script>
+	</body>
+</html><!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>breakfastb</title>
+	    <meta name="viewport" content="width=device-width">
+		<meta name="author" content="breakfastb">
+		<link rel="stylesheet" href="style.css">		
+		<link rel="stylesheet" href="animsition/css/animsition.css">
+		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="js/calc.js"></script>
 		<script src="animsition/js/animsition.js"></script>
 		<script>
 			$(document).ready(function() {
@@ -269,13 +309,250 @@
 				timeoutCountdown: 5000,
 				onLoadEvent: true,
 				browser: [ 'animation-duration', '-webkit-animation-duration'],
-				// "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
-				// The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
 				overlay : false,
 				overlayClass : 'animsition-overlay-slide',
 				overlayParentElement : 'body',
 				transition: function(url){ window.location.href = url; }
 			  });
+			});
+		</script>
+	</head>
+	
+	<body class="animsition">
+		<div id="topcontain">
+			<div class="topbox">
+				<div class="inner">
+					<div class="profile"></div>
+					<h1 id="title">breakfastb</h1>
+					<p class="subtitle">20 // libra // intp // hufflepuff</p>
+					<p>Hi there! I go by a few names (breakfastb, chadolbaki, cappy), but feel free to use whatever you like!</p>
+					<p>I'm a fourth year uni student, studying psych. I like yuri (!) and other things. Scroll down for commissions info!</p>
+					<ul id="links">
+						<a href="http://breakfastbooty.tumblr.com/"><li>blog</li></a>
+						<a href="http://twitter.com/chadolbaki7"><li>twitter</li></a>
+						<a href="http://breakfastbooty.tictail.com/"><li>shop</li></a>
+						<a href="https://picarto.tv/breakfastb/"><li>streams</li></a>
+						<a href="mailto:breakfastb.illust@gmail.com"><li>email</li></a>
+						<a href="https://hicalcium.github.io/ocs_v2/"><li>ocs</li></a>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div id="bottomcontain">
+			<div class="box">
+					<div class="inner">
+						<div class="text">
+							<h1>commissions</h1>
+							<p>If you're interested in commissioning me, please feel free to use this calculator below to calculate your order price:</p>
+							<br>
+							  <div id="calculator">
+								<form id="calc" action="javascript:commcalc();">
+									<span>character count</span>
+									<input type="number" id="count" min="1" max="10">
+									<span>style</span>
+									<select name="style" id="style">
+										<option value="">select</option>
+										<option value="sketch">sketch</option>
+										<option value="mono">b/w or wash/flat</option>
+										<option value="full">full color</option>
+									</select>
+									<span>type</span>
+									<select name="type" id="type">
+										<option value="">select</option>
+										<option value="chibi">chibi</option>
+										<option value="bust">bust</option>
+										<option value="waist">waist</option>
+										<option value="fb">fullbody</option>
+									</select>
+									<input type="submit" id="push" value="price">
+								</form>
+								<div id="output"></div>
+								</div>
+							<p>Scroll down for samples & more info!</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="box">
+					<div class="inner">
+						<div class="text">
+							<h1>information</h1>
+							<p>Here is some info on how to commission me and how the process works!</p>
+							
+							<h2>rules</h2>
+							<ul>
+								<li>Time of completion ranges from 1 day to 2 weeks+, so please be patient!</li>
+								<li>I might deny your commission request (sorry!), I can explain why if you like</li>
+								<li>You can't claim a commission as your own art or use it in commercial work</li>
+							</ul>
+							
+							<h2>process</h2>
+							<ul id="process">
+								<li>contact me</li>
+								<li>↓</li>
+								<li>rough sketch approval</li>
+								<li>↓</li>
+								<li>invoice sent</li>
+								<li>↓</li>
+								<li>lines (+revisions)</li>
+								<li>↓</li>
+								<li>color</li>
+								<li>↓</li>
+								<li>payment received</li>
+								<li>↓</li>
+								<li>final image sent</li>
+							</ul>
+							
+							<h2>dos/dont's</h2>
+							<br>
+							<h3 id="ok">OK 〇</h3>
+							<ul>
+								<li>NSFW (within bounds)</li>
+								<li>OC with DRAWN picture references (+fee otherwise)</li>
+								<li>fanart</li>
+							</ul>
+							
+							<h3 id="ng">NG ✖</h3>
+							<ul>
+								<li>too complex (armor, mecha, etc.)</li>
+								<li>fandom OCs, crossover of fanart + original OCs</li>
+								<li>/d/-tier fetishes (scat, guro, furry, etc.)</li>
+								<li>NSFW of real life people</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			
+				<div class="box">
+					<div class="inner">
+						<div class="text">
+							<h1>order form</h1>
+							<br>
+							<div class="code">
+								<p><b>Username</b>: i.e. twitter or tumblr handle</p>
+								<p><b>Contact Method</b>: best way to get in touch with you</p>
+								<p><b>Commission Type</b>: chibi / bust / waist / fullbody</p>
+								<p><b>Color Type</b>: sketch / black and white / wash / flat / full color</p>
+								<p><b>Request</b>: what you'd like to commission</p>
+								<p><b>References</b>: (please no photobucket links)</p>
+								<p><b>Anything Else</b>:</p>
+							</div>
+							<br>
+							<p>You don't have to follow this form strictly, but please include the basic items! You can send it to my email, tumblr, or twitter.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="box">
+					<div class="inner">
+						<div class="text">
+							<h1>slots</h1>
+							<ul id="slots">
+								<li>slot 1</li>
+								<li>curious_usagi</li>
+								
+								<li>slot 2</li>
+								<li>bobby hill</li>
+								
+								<li>slot 3</li>
+								<li>luca</li>
+								
+								<li>#queued</li>
+								<li>0</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="box">
+					<div class="inner">
+						<div class="text">
+							<h1>chibi</h1>
+							<p>Preferably simple clothes/designs, if they are complex they will (probably) be simplified at least a little bit.</p>
+							<p>※ NSFW not available for this option</p>
+							
+							<div class="slider">
+								<div><img src="img/sample/chibi/0.png" /></div>
+								<div><img src="img/sample/chibi/1.png" /></div>
+								<div><img src="img/sample/chibi/2.png" /></div>
+								<div><img src="img/sample/chibi/3.png" /></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+				<div class="box">
+					<div class="inner">
+						<div class="text">
+							<h1>bust</h1>
+							<p>From the head to the shoulders!</p>
+							
+							<div class="slider">
+								<div><img src="img/sample/bust/0.png" /></div>
+								<div><img src="img/sample/bust/1.png" /></div>
+								<div><img src="img/sample/bust/2.png" /></div>
+								<div><img src="img/sample/bust/3.png" /></div>
+								<div><img src="img/sample/bust/4.png" /d></div>
+								<div><img src="img/sample/bust/5.png" /d></div>
+								<div><img src="img/sample/bust/6.png" /d></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+				<div class="box">
+					<div class="inner">
+						<div class="text">
+							<h1>waist-up</h1>
+							<p>From the waist and up, sometimes will include parts of the leg (but technically is going to be from the waist up in most cases).</p>
+							
+							<div class="slider">
+								<div><img src="img/sample/waist/0.png" /></div>
+								<div><img src="img/sample/waist/1.png" /></div>
+								<div><img src="img/sample/waist/2.png" /></div>
+								<div><img src="img/sample/waist/3.png" /></div>
+								<div><img src="img/sample/waist/4.png" /d></div>
+								<div><img src="img/sample/waist/5.png" /d></div>
+								<div><img src="img/sample/waist/6.png" /d></div>
+								<div><img src="img/sample/waist/7.png" /d></div>
+								<div><img src="img/sample/waist/8.png" /d></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+				<div class="box">
+					<div class="inner">
+						<div class="text">
+							<h1>fullbody</h1>
+							<p>From the head to the toes!</p>
+							
+							<div class="slider">
+								<div><img src="img/sample/fb/0.png" /></div>
+								<div><img src="img/sample/fb/1.png" /></div>
+								<div><img src="img/sample/fb/2.png" /></div>
+								<div><img src="img/sample/fb/3.png" /></div>
+								<div><img src="img/sample/fb/4.png" /d></div>
+								<div><img src="img/sample/fb/5.png" /d></div>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+		
+		<script type="text/javascript" src="slick/slick.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('#load').fadeOut(500);
+				$('.slider').slick({
+				  arrows:true,
+				  infinite:true,
+				  dots:true,
+				  adaptiveHeight:true,
+				  fade:true,
+				  cssEase:'linear'
+				});
 			});
 		</script>
 	</body>
