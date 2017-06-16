@@ -53,3 +53,22 @@ option{box-shadow:none;border:0px !important;}
 .slick-prev::before, .slick-next::before{color:rgba(155,155,155,0.5) !important;}
 .code{font-family:Source Code Pro, monospace;font-size:14px;border:2px solid #ccc;background:#eeeeee;border-radius:5px;padding:25px;-moz-user-select:text;-khtml-user-select:text;-webkit-user-select:text}
 #output{padding-top:25px;font-size:150%;}
+@media (max-width: 700px) {
+	#bottomcontain .text {
+		max-width: 90%;
+	}
+	p, #links li, #calculator, .text {
+		font-size:12px;
+	}
+	#calculator input {
+		width:50px;
+	}
+	topbox > .inner {
+		width: 80%;
+		margin: 0 auto;
+	}
+	.slider {
+		width:75%;
+		margin:0 auto;
+	}
+}
