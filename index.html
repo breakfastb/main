@@ -10,22 +10,6 @@
 		<link rel="stylesheet" href="animsition/css/animsition.css">
 		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 		<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="js/calc.js"></script>
-		<script type="text/javascript" src="slick/slick.js"></script>
-		<script src="animsition/js/animsition.js"></script>
-		<script>
-			$(document).ready(function(){
-				$('#topcontain').height($(window).height());
-				$('.slider').slick({
-				  arrows:true,
-				  dots:true,
-				  adaptiveHeight:true,
-				  fade:true,
-				  cssEase:'linear'
-				});
-			});
-		</script>
 	</head>
 	
 	<body class="animsition">
@@ -274,6 +258,22 @@
 				overlayParentElement : 'body',
 				transition: function(url){ window.location.href = url; }
 			  });
+			});
+		</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="js/calc.js"></script>
+		<script type="text/javascript" src="slick/slick.js"></script>
+		<script src="animsition/js/animsition.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('#topcontain').height($(window).height());
+				$('.slider').slick({
+				  arrows:true,
+				  dots:true,
+				  adaptiveHeight:true,
+				  fade:true,
+				  cssEase:'linear'
+				});
 			});
 		</script>
 	</body>
