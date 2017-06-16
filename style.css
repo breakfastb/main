@@ -1,6 +1,6 @@
 @font-face{font-family:'Whitney Bold';src:url(fonts/whitneybold.ttf);}
 @font-face{font-family:'Whitney';src:url(fonts/whitney.otf);}
-@font-face{font-family:'Source Code Pro';src:url(fonts/sourcecodepro-regular.ttf);}
+@font-face{font-family:'Source Code Pro';src:url(fonts/sourcecodepro-regular);}
 *{--primary:#00BCD4;--primaryt:#212121;--secondaryt:#d3d3d3;}
 :root{--main:#e91e63;--accent:#fff;}
 html, body{margin:0;padding:0;border:0;overflow=x:hidden;-moz-user-select:none;-khtml-user-select:none;-webkit-user-select:none;cursor:default;flex-basis:100%;width:100%;font-family:Whitney, sans-serif;}
