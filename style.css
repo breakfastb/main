@@ -43,6 +43,7 @@ body {
 }
 .topbox>.inner {
     text-align: center;
+    padding:10px;
 }
 h1#title {
     padding-top: 15px;
