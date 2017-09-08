@@ -38,7 +38,7 @@ span, p {
 }
 
 #header {
-    //background-image:url(http://68.media.tumblr.com/6cc04ff243e08fbfdb57eda523434644/tumblr_ou5cpc4NB81qfq7h2o1_1280.png);
+    //background-image:url(img/profile.png);
     background-size:cover;
     background-position:top center;
     background-attachment: fixed;
@@ -103,4 +103,11 @@ ul li, ul {
     display:inline-block;
     padding-left:0px;
     cursor:default;
+}
+
+#comm img {
+    height:200px;
+    width:200px;
+    object-fit:cover;
+    object-position:50% 0%;
 }
