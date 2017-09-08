@@ -160,7 +160,7 @@
 				<div id="calc">
 					<h2>price estimate</h2>
 					<div class="container">
-						<form>
+						<form action="javascript:commcalc();">
 							<div class="row">
 								<div class="col">
 									<label class="form-control-label" for="count">Character no.</label>
@@ -185,12 +185,12 @@
 		  								<option value="fb">fullbody</option>
 		  							</select>
 								</div>
-								<button type="submit" id="push" class="btn btn-primary">submit</button>
+								<button type="submit" id="push" value="price" class="btn btn-primary">submit</button>
 							</div>
 						</form>
 						<br>
 						<div class="alert alert-primary" id="price">
-							<p>Estimated price:</p>
+							<h3>Estimated price:</h3>
 							<span id="output"></span>
 						</div>
 					</div>
@@ -315,16 +315,12 @@
 				alert('You have to enter an amount!');
 			}
 			else {
-				base = (stylecnt + typecount)
-				total = base + ((count-1) * (base*0.75))
+				var base = (stylecnt + typecount);
+				total = base + ((count-1) * (base*0.75));
 			}
 			output.text(total + "USD");
+			var price = $('#price');
 		}
-		
-		$('#push').click(function() {
-			commcalc();
-			$('#price').fadeToggle(200);
-		});
 		</script>
 	</body>
 </html>
