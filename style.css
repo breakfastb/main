@@ -1,5 +1,41 @@
 body, html {
     overflow-x:hidden;
+    --accent:#33a1c9;
+}
+
+.fixed-top {
+    background:#303030;
+    font-weight:bold;
+}
+
+.fixed-top * {
+    color:#fff !important;
+    transition:color 200ms;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color:var(--accent) !important;
+    transition:color 200ms;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
+.jumbotron:first-of-type {
+    background:var(--accent);
+    color:#fff;
+}
+
+.jumbotron:first-of-type a {
+    color:#fff;
+    border-bottom:3px solid transparent;
+    transition:border-color 200ms;
+}
+
+.jumbotron:first-of-type a:hover {
+    border-color:#fff;
+    transition:border-color 200ms;
 }
 
 h1, .navbar-brand {
@@ -12,16 +48,22 @@ h1, .navbar-brand {
     text-align:center;
 }
 
-h2, span, a, p, input, button {
+h2, h4, span, a, p, input, button {
     font-family:'Lato', sans-serif !important;
 }
 
-h2, h3 {
+h2, h3, h4 {
     text-transform: uppercase;
     letter-spacing: 1.0px;
-    font-size:13px;
     font-weight: bold;
     padding-bottom:10px !important;
+}
+
+h4 {
+    font-size:11px;
+}
+h3 {
+    font-size:13px;
 }
 
 h2 {
@@ -36,6 +78,16 @@ span, p {
     font-size:16px;
     line-height:1.6;
     word-wrap:break-word;
+}
+
+.fixed-top .nav-link {
+    text-transform:uppercase;
+    transition:color 200ms;
+}
+
+.collapse .nav-link:hover {
+    color:var(--accent) !important;
+    transition:color 200ms;
 }
 
 #header {
@@ -110,4 +162,19 @@ ul li, ul {
     max-height:200px !important;
     object-fit:cover;
     object-position:50% 0%;
+}
+
+.workth, #about img {
+    height:100% !important;
+    width:100% !important;
+    object-fit: cover;
+}
+
+#works .btn {
+    margin-bottom:10px;
+    cursor:pointer;
+}
+
+#works p {
+    text-align:justify !important;
 }
