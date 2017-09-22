@@ -48,28 +48,30 @@ h1, .navbar-brand {
     text-align:center;
 }
 
-h2, h4, span, a, p, input, button {
+h2, span, a, p, input, button {
     font-family:'Lato', sans-serif !important;
 }
 
 h2, h3, h4 {
     text-transform: uppercase;
     letter-spacing: 1.0px;
-    font-weight: bold;
+    font-weight: bold !important;
     padding-bottom:10px !important;
 }
-
+h3,h4 {
+    font-family: 'Dosis',sans-serif;
+    font-weight: 700 !important;
+}
 h4 {
-    font-size:11px;
+    font-size:1em !important;
 }
 h3 {
-    font-size:13px;
+    font-size:inherit !important;
 }
-
 h2 {
-    font-size:1.2em;
+    font-size:1.5em !important;
+    font-weight: 900 !important;
 }
-
 .category::after {
     content:'.';
 }
@@ -91,7 +93,7 @@ span, p {
 }
 
 #header {
-    //background-image:url(img/profile.png);
+    background-image:url(img/neet.png);
     background-size:cover;
     background-position:top center;
     background-attachment: fixed;
@@ -164,17 +166,67 @@ ul li, ul {
     object-position:50% 0%;
 }
 
-.workth, #about img {
-    height:100% !important;
-    width:100% !important;
+.workth {
+    height:300px;
+    width:100%;
     object-fit: cover;
+    margin-bottom:15px;
+}
+
+.workth {
+    object-position:top center;
+}
+
+#profile {
+    width:100%;
+    height:auto;
 }
 
 #works .btn {
     margin-bottom:10px;
     cursor:pointer;
+    background:#f1f1f1;
+    padding:10px;
+    transition:background 300ms;
+}
+
+#works .btn:hover {
+    background:var(--accent) !important;
+    transition:background 300ms;
+}
+
+#works .btn:hover a {
+    color:#fff !important;
 }
 
 #works p {
     text-align:justify !important;
+}
+
+#works .row, #comm .gallery {
+    margin-bottom: 30px;
+}
+.cardbox {
+    background:#fff;
+    border-radius:5px;
+    overflow:hidden;
+}
+
+.inner {
+    padding:50px;
+}
+
+#info li, #info {
+    list-style-type: none;
+    padding:0;
+}
+
+#info li:before {
+    content:'▮';
+}
+
+@media (max-width: 840px) {
+  #infotext, #infotext p {
+    font-size: 12px !important;
+  }
 }

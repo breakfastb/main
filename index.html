@@ -3,18 +3,18 @@
 <html lang="en">
 	<head>
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-		<link href="https://fonts.googleapis.com/css?family=Dosis:700|Lato" rel="stylesheet">
+		<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Dosis:700|Lato:400,900" rel="stylesheet">
 		<meta charset="utf-8">
 		<title>breakfastb</title>
 	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta name="author" content="breakfastb">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
-		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="magnific-popup.css">
 	</head>
 	
 	<body>
-		<nav class="navbar navbar-inverse fixed-top navbar-expand-lg navbar-light bg-faded justify-content-between">
+		<nav class="navbar navbar-inverse fixed-top navbar-expand-lg navbar-light bg-faded justify-content-between" id="navtop">
 		  <a class="navbar-brand" href="#">bb</a>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
@@ -22,9 +22,6 @@
 		
 		  <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
 		    <ul class="navbar-nav">
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">Top</a>
-		      </li>
 		      <li class="nav-item">
 		        <a class="nav-link" href="#comm">Commissions</a>
 		      </li>
@@ -70,7 +67,7 @@
 				<div class="container">
 					<p>:3</p>
 					<div class="row">
-						<div class="col-9">
+						<div class="col-12 col-md-9">
 							<div class="row gallery no-gutters">
 								<div class="col-4">
 									<a href="img/sample/chibi/0.png"><img src="img/sample/chibi/0.png" class="img-fluid"></a>
@@ -83,14 +80,14 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-3 text-left">
+						<div class="col-12 col-md-3 text-left">
 							<h2 class="category">chibi</h2>
 							<p>Best suited to simple designs. ※NSFW not available for this option.</p>
 						</div>
 					</div>
 					<hr>
 					<div class="row">
-						<div class="col-9">
+						<div class="col-12 col-md-9">
 							<div class="row gallery no-gutters">
 								<div class="col-4">
 									<a href="img/sample/sketch/0.png"><img src="img/sample/sketch/0.png" class="img-fluid"></a>
@@ -103,14 +100,14 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-3 text-left">
+						<div class="col-12 col-md-3 text-left">
 							<h2 class="category">sketch</h2>
 							<p>Sketch+some line shading.</p>
 						</div>
 					</div>
 					<hr>
 					<div class="row">
-						<div class="col-9">
+						<div class="col-12 col-md-9">
 							<div class="row gallery no-gutters">
 								<div class="col-4">
 									<a href="img/sample/splash/0.png"><img src="img/sample/splash/0.png" class="img-fluid"></a>
@@ -123,14 +120,14 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-3 text-left">
+						<div class="col-12 col-md-3 text-left">
 							<h2 class="category">splash color</h2>
 							<p>Wash with splashes of color in certain spots (usually hair, clothes, etc.)</p>
 						</div>
 					</div>
 					<hr>
 					<div class="row">
-						<div class="col-9">
+						<div class="col-12 col-md-9">
 							<div class="row gallery no-gutters">
 								<div class="col-4">
 									<a href="img/sample/full/0.png"><img src="img/sample/full/0.png" class="img-fluid"></a>
@@ -143,7 +140,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-3 text-left">
+						<div class="col-12 col-md-3 text-left">
 							<h2 class="category">full color</h2>
 							<p>Color+shading. -5$ for flats (no shading).</p>
 						</div>
@@ -151,8 +148,9 @@
 				</div>
 				<hr>
 				<div id="calc">
-					<h2>price estimate</h2>
 					<div class="container">
+						<h2>price estimate</h2>
+						<br>
 						<form action="javascript:commcalc();">
 							<div class="row">
 								<div class="col">
@@ -190,8 +188,9 @@
 				</div>
 				<hr>
 				<div id="slots">
-					<h2>slots</h2>
 					<div class="container">
+						<h2>slots</h2>
+						<br>
 						<div class="row">
 							<div class="col-6">
 								<h3>current</h3>
@@ -230,96 +229,62 @@
 				<h1>works</h1>
 				<div class="container">
 				<h3>personal projects</h3>
+				<br>
 				<div class="row">
-					<div class="col-6">
-						<div class="row no-gutters">
-							<div class="col-6">
-								<img class="workth" src="http://www.catsaroundtheglobe.com/wp-content/uploads/latte_art_cat_in_coffee_9.jpg">
-							</div>
-							<div class="col-6">
-								<img class="workth" src="http://cdn0.lostateminor.com/wp-content/uploads/2014/10/latte-art.jpg">
-							</div>
-						</div>
-						<br>
-						<div class="row">
-							<div class="col-12">
-								<h2>I Don't Like Coffee</h2>
+					<div class="col-12 col-sm-12 col-md-6">
+						<div class="cardbox">
+							<img class="workth" src="img/works/idlcbside.jpg">
+							<div class="inner">
+								<h2>IDLC B-Side</h2>
 								<h4>February 2017</h4>
-								<a href="https://gum.co/URiik"><button class="btn btn-sm">
+								<a href="https://gum.co/URiik" class="btn btn-sm">
 									digital
-								</button></a>
+								</a>
 								<p>My first doujin. This was of Mystic Messenger, feat. Jaehee Kang and MC. 20p</p>
 							</div>
 						</div>
 					</div>
-					<div class="col-6">
-						<div class="row no-gutters">
-							<div class="col-6">
-								<img class="workth" src="http://www.catsaroundtheglobe.com/wp-content/uploads/latte_art_cat_in_coffee_9.jpg">
-							</div>
-							<div class="col-6">
-								<img class="workth" src="http://cdn0.lostateminor.com/wp-content/uploads/2014/10/latte-art.jpg">
-							</div>
-						</div>
-						<br>
-						<div class="row">
-							<div class="col-12">
-								<h2>I don't like coffee b-side</h2>
-								<h4>September 2017</h4>
-								<a href="#"><button class="btn btn-sm">
-									digital
-								</button></a>
-								<a href="http://breakfastb.storenvy.com/products/21348635-i-dont-like-coffee-b-side"><button class="btn btn-sm">
-									print &nbsp;<span class="badge badge-secondary">not yet</span>
-								</button></a>
-								<p>My follow-up to IDLC, mostly a mix of comics and drawings. 16p</p>
+					<div class="col-12 col-sm-12 col-md-6">
+						<div class="cardbox">
+							<img class="workth" src="img/works/idlc.png">
+							<div class="inner">
+								<h2>I Don't Like Coffee</h2>
+								<h4>February 2017</h4>
+								<a href="https://gum.co/URiik" class="btn btn-sm">
+										digital
+								</a>
+								<p>My first doujin. This was of Mystic Messenger, feat. Jaehee Kang and MC. 20p</p>
 							</div>
 						</div>
 					</div>
 					
 				</div>
 				<div class="row">
-					<div class="col-6">
-						<div class="row no-gutters">
-							<div class="col-6">
-								<img class="workth" src="http://www.catsaroundtheglobe.com/wp-content/uploads/latte_art_cat_in_coffee_9.jpg">
-							</div>
-							<div class="col-6">
-								<img class="workth" src="http://cdn0.lostateminor.com/wp-content/uploads/2014/10/latte-art.jpg">
-							</div>
-						</div>
-						<br>
-						<div class="row">
-							<div class="col-12">
+					<div class="col-12 col-sm-12 col-md-6">
+						<div class="cardbox">
+							<img class="workth" src="img/works/sd.png">
+							<div class="inner">
 								<h2>Summer Days</h2>
 								<h4>June 2017</h4>
-								<a href="https://gum.co/ppyVX"><button class="btn btn-sm">
+								<a href="https://gum.co/ppyVX" class="btn btn-sm">
 									digital
-								</button></a>
-								<a href="http://breakfastb.storenvy.com/products/21348551-summer-days"><button class="btn btn-sm">
-									print &nbsp;<span class="badge badge-secondary">in stock</span>
-								</button></a>
+								</a>
+								<a href="http://breakfastb.storenvy.com/products/21348551-summer-days" class="btn btn-sm">
+										print &nbsp;<span class="badge badge-secondary">in stock</span>
+								</a>
 								<p>My first printed original comic. Focuses on Ayu, a mergirl, and Mia, a catgirl, who have been childhood friends.</p>
 							</div>
 						</div>
 					</div>
-					<div class="col-6">
-						<div class="row no-gutters">
-							<div class="col-6">
-								<img class="workth" src="http://www.catsaroundtheglobe.com/wp-content/uploads/latte_art_cat_in_coffee_9.jpg">
-							</div>
-							<div class="col-6">
-								<img class="workth" src="http://cdn0.lostateminor.com/wp-content/uploads/2014/10/latte-art.jpg">
-							</div>
-						</div>
-						<br>
-						<div class="row">
-							<div class="col-12">
+					<div class="col-12 col-sm-12 col-md-6">
+						<div class="cardbox">
+							<img class="workth" src="img/works/ss.png">
+							<div class="inner">
 								<h2>Shining Star</h2>
-								<h4>date</h4>
-								<a href="https://tapas.io/series/shining-star-"><button class="btn btn-sm">
-									read online
-								</button></a>
+								<h4>November 2016</h4>
+								<a href="https://tapas.io/series/shining-star-" class="btn btn-sm">
+										read online
+								</a>
 								<p>Submission to Lilies Anthology vol2 that didn't make it. A story about Mira, a fallen star, and Sophie, the girl who falls in love with her.</p>
 							</div>
 						</div>
@@ -327,108 +292,59 @@
 					
 				</div>
 				<div class="row">
-					<div class="col-6">
-						<div class="row no-gutters">
-							<div class="col-6">
-								<img class="workth" src="http://www.catsaroundtheglobe.com/wp-content/uploads/latte_art_cat_in_coffee_9.jpg">
-							</div>
-							<div class="col-6">
-								<img class="workth" src="http://cdn0.lostateminor.com/wp-content/uploads/2014/10/latte-art.jpg">
-							</div>
-						</div>
-						<br>
-						<div class="row">
-							<div class="col-12">
+					<div class="col-12 col-sm-12 col-md-6">
+						<div class="cardbox">
+							<img class="workth" src="img/works/oneechan.png">
+							<div class="inner">
 								<h2>Helpless Oneechan</h2>
 								<h4>March 2017 to present</h4>
-								<a href="https://tapas.io/series/helplessoneechan"><button class="btn btn-sm">
+								<a href="https://tapas.io/series/helplessoneechan" class="btn btn-sm">
 									read @tapas
-								</button></a>
-								<a href="http://www.webtoons.com/en/challenge/helpless-oneechan-next-door/list?title_no=111955"><button class="btn btn-sm">
+								</a>
+								<a href="http://www.webtoons.com/en/challenge/helpless-oneechan-next-door/list?title_no=111955" class="btn btn-sm">
 									read @line webtoon
-								</button></a>
+								</a>
 								<p>Ongoing webcomic about Saki, a recent graduate student who can't do anything, and Ume, a uni freshman who can do everything.</p>
 							</div>
 						</div>
 					</div>
-					<!--<div class="col-6">
-						<div class="row no-gutters">
-							<div class="col-6">
-								<img class="workth" src="http://www.catsaroundtheglobe.com/wp-content/uploads/latte_art_cat_in_coffee_9.jpg">
-							</div>
-							<div class="col-6">
-								<img class="workth" src="http://cdn0.lostateminor.com/wp-content/uploads/2014/10/latte-art.jpg">
-							</div>
-						</div>
-						<br>
-						<div class="row">
-							<div class="col-12">
-								<h2>title</h2>
-								<h4>date</h4>
-								<a href="#"><button class="btn btn-sm">
-									digital
-								</button></a>
-								<a href="#"><button class="btn btn-sm">
-									physical &nbsp;<span class="badge badge-secondary">in stock</span>
-								</button></a>
-								<p>descriptor</p>
-							</div>
-						</div>-->
-					</div>
-					
 				</div>
 				<hr>
 				<br>
 				<h3>assorted works</h3>
+				<br>
 				<div class="row">
-					<div class="col-6">
-						<div class="row no-gutters">
-							<div class="col-6">
-								<img class="workth" src="http://www.catsaroundtheglobe.com/wp-content/uploads/latte_art_cat_in_coffee_9.jpg">
-							</div>
-							<div class="col-6">
-								<img class="workth" src="http://cdn0.lostateminor.com/wp-content/uploads/2014/10/latte-art.jpg">
-							</div>
-						</div>
-						<br>
-						<div class="row">
-							<div class="col-12">
+					<div class="col-12 col-sm-12 col-md-6">
+						<div class="cardbox">
+							<img class="workth" src="img/works/getaway.png">
+							<div class="inner">
 								<h2>getaway</h2>
 								<h4>February 2017</h4>
-								<a href="https://gum.co/HnOJg"><button class="btn btn-sm">
+								<a href="https://gum.co/HnOJg" class="btn btn-sm">
 									buy digital
-								</button></a>
+								</a>
 								<p>An original comic focusing on body positivity done for <a href="https://chubby-anthology.tumblr.com/">Chubby Anthologies</a> vol2. Features Jo and May, a couple going on a romantic getaway.</p>
 							</div>
 						</div>
 					</div>
-					<div class="col-6">
-						<div class="row no-gutters">
-							<div class="col-6">
-								<img class="workth" src="http://www.catsaroundtheglobe.com/wp-content/uploads/latte_art_cat_in_coffee_9.jpg">
-							</div>
-							<div class="col-6">
-								<img class="workth" src="http://cdn0.lostateminor.com/wp-content/uploads/2014/10/latte-art.jpg">
-							</div>
-						</div>
-						<br>
-						<div class="row">
-							<div class="col-12">
+					<div class="col-12 col-sm-12 col-md-6">
+						<div class="cardbox">
+							<img class="workth" src="img/works/lifeguard.jpg">
+							<div class="inner">
 								<h2>lifeguard</h2>
 								<h4>August 2016</h4>
-								<a href="#https://tapas.io/episode/429047"><button class="btn btn-sm">
+								<a href="#https://tapas.io/episode/429047" class="btn btn-sm">
 									read online
-								</button></a>
-								<a href="http://www.lulu.com/shop/http://www.lulu.com/shop/lilies-anthology/lilies-vol-1-water-lily/paperback/product-23033256.html"><button class="btn btn-sm">
+								</a>
+								<a href="http://www.lulu.com/shop/http://www.lulu.com/shop/lilies-anthology/lilies-vol-1-water-lily/paperback/product-23033256.html" class="btn btn-sm">
 									buy print &nbsp;<span class="badge badge-secondary">in stock</span>
-								</button></a>
+								</a>
 								<p>My submission to <a href="http://liliesanthology.tumblr.com/">Lilies Anthology</a> vol.1! The theme was water. The story follows Ran, an intrepid lifeguard, and Meri, a shy college student.</p>
 							</div>
 						</div>
+						</div>
 					</div>
-					
 				</div>
-			</div>
 			</div>
 		</section>
 		
@@ -438,11 +354,19 @@
 				<h3>breakfast</h3>
 				<div class="container">
 					<div class="row">
-						<div class="col-6">
-							<img src="http://68.media.tumblr.com/afcf0bfd13928f32f464f855fe58de15/tumblr_ok0b9e3DNm1qfq7h2o1_1280.png">
+						<div class="col-6 text-left" id="infotext">
+							<p>Hi! I go by many names (breakfastb, cappy, chadolbaki, etc.) but you can call me any of the above. I'm an LGBT Korean&Japanese American who likes to draw comics and illust mainly focusing on LGBT women. Nice to meet you!</p>
+							<h3>info</h3>
+							<ul id="info">
+								<li><b>age</b> // 20</li>
+								<li><b>zodiac</b> // libra</li>
+								<li><b>horoscope</b> // rat</li>
+								<li><b>blood type</b> // O</li>
+								<li><b>mbti</b> // intp</li>
+							</ul>
 						</div>
 						<div class="col-6">
-							<p>Hi! I go by many names (breakfastb, cappy, chadolbaki, etc.) but you can call me any of the above. I'm an LGBT Korean&Japanese American who now lives in the Midwest. Currently a psych student who likes to draw comics and illust mainly focusing on LGBT women. Nice to meet you!</p>
+							<img id="profile" src="img/self.png">
 						</div>
 					</div>
 				</div>
@@ -450,7 +374,7 @@
 		</section>
 		
 	
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 		<script src="jquery.magnific-popup.min.js"></script>
@@ -521,6 +445,21 @@
 			output.text(total + "USD");
 			var price = $('#price');
 		}
+		
+		$(document).ready(function(){
+		  $('.navbar a').on('click', function(event) {
+		    if (this.hash !== "") {
+		      event.preventDefault();
+		      var hash = this.hash;
+		      $('html, body').animate({
+		        scrollTop: $(hash).offset().top
+		      }, 900, function(){
+		      	window.location.hash = hash;
+		      });
+		    }
+		  });
+		  $('#header').css('margin-top',$('#navtop').height());
+		});
 		</script>
 	</body>
 </html>
