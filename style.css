@@ -207,7 +207,7 @@ ul li, ul {
     transition:background 300ms;
 }
 
-#works .btn:hover a {
+#works .btn:hover {
     color:#fff !important;
 }
 
