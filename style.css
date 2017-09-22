@@ -146,8 +146,8 @@ ul li, ul {
 }
 
 #about {
-    background-color:#007bff !important;
-    color:white;
+    /*background-color:#007bff !important;
+    color:white;*/
 }
 
 .special {
@@ -180,8 +180,20 @@ ul li, ul {
 #profile {
     width:100%;
     height:auto;
+    max-width:400px;
 }
 
+#patreon {
+    margin-top:-1px;
+}
+
+.fa {
+    font-size:20px !important;
+}
+
+#about .container, #about .container-fluid {
+    padding-bottom:0px !important;
+}
 #works .btn {
     margin-bottom:10px;
     cursor:pointer;
