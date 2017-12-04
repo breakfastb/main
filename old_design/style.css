@@ -1,0 +1,247 @@
+body, html {
+    overflow-x:hidden;
+    --accent:#007bff;
+}
+
+.fixed-top {
+    background:#303030;
+    font-weight:bold;
+}
+
+.fixed-top * {
+    color:#fff !important;
+    transition:color 200ms;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color:var(--accent) !important;
+    transition:color 200ms;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
+.jumbotron:first-of-type {
+    background:var(--accent);
+    color:#fff;
+}
+
+.jumbotron:first-of-type a {
+    color:#fff;
+    border-bottom:3px solid transparent;
+    transition:border-color 200ms;
+}
+
+.jumbotron:first-of-type a:hover {
+    border-color:#fff;
+    transition:border-color 200ms;
+}
+
+h1, .navbar-brand {
+    text-transform: uppercase;
+    font-family:'Dosis',sans-serif !important;
+    font-weight: 700;
+}
+
+.title {
+    text-align:center;
+}
+
+h2, span, a, p, input, button {
+    font-family:'Lato', sans-serif !important;
+}
+
+h2, h3, h4 {
+    text-transform: uppercase;
+    letter-spacing: 1.0px;
+    font-weight: bold !important;
+    padding-bottom:10px !important;
+}
+h3,h4 {
+    font-family: 'Dosis',sans-serif;
+    font-weight: 700 !important;
+}
+h4 {
+    font-size:1em !important;
+}
+h3 {
+    font-size:inherit !important;
+}
+h2 {
+    font-size:1.5em !important;
+    font-weight: 900 !important;
+}
+.category::after {
+    content:'.';
+}
+
+span, p {
+    font-size:16px;
+    line-height:1.6;
+    word-wrap:break-word;
+}
+
+.fixed-top .nav-link {
+    text-transform:uppercase;
+    transition:color 200ms;
+}
+
+.collapse .nav-link:hover {
+    color:var(--accent) !important;
+    transition:color 200ms;
+}
+
+#header {
+    background-image:url(img/neet.png);
+    background-size:cover;
+    background-position:top center;
+    background-attachment: fixed;
+}
+
+section, .linkbox {
+    text-align: center;
+}
+
+section:nth-of-type(even) {
+    background:#f8f8f8;
+}
+.gallery img {
+    border:10px solid #f8f8f8;
+}
+
+.container,.container-fluid {
+    padding:5%;
+}
+
+#code p {
+    line-height: 1 !important;
+    font-size:1em !important;
+    font-family:monospace !important;
+}
+
+.ng {
+    color:red;
+    font-size:1.5em;
+}
+
+.ok {
+    color:green;
+    font-size:1.3em;
+}
+
+.ng, .ok {
+    font-weight:700;
+    padding-right:2px;
+}
+
+ul li, ul {
+    list-style-type:none;
+    padding:0;
+    margin:0;
+}
+
+.linkbox {
+    border:1px solid blue;
+}
+
+#about {
+    /*background-color:#007bff !important;
+    color:white;*/
+}
+
+.special {
+    color:#007bff !important;
+}
+
+#slots ol {
+    display:inline-block;
+    padding-left:0px;
+    cursor:default;
+}
+
+.gallery .img-fluid {
+    max-height:200px !important;
+    object-fit:cover;
+    object-position:50% 0%;
+}
+
+.workth {
+    height:300px;
+    width:100%;
+    object-fit: cover;
+    margin-bottom:15px;
+}
+
+.workth {
+    object-position:top center;
+}
+
+#profile, #process img {
+    width:100%;
+    height:auto;
+    max-width:300px;
+}
+
+#patreon {
+    margin-top:-1px;
+}
+
+.fa {
+    font-size:20px !important;
+}
+
+#about .container, #about .container-fluid {
+    padding-bottom:0px !important;
+}
+#works .btn {
+    margin-bottom:10px;
+    cursor:pointer;
+    background:#f1f1f1;
+    padding:10px;
+    transition:background 300ms;
+}
+
+#works .btn:hover {
+    background:var(--accent) !important;
+    transition:background 300ms;
+}
+
+#works .btn:hover {
+    color:#fff !important;
+}
+
+#works p {
+    text-align:justify !important;
+}
+
+#works .row, #comm .gallery {
+    margin-bottom: 30px;
+}
+.cardbox {
+    background:#fff;
+    border-radius:5px;
+    overflow:hidden;
+}
+
+.inner {
+    padding:50px;
+}
+
+#info li, #info {
+    list-style-type: none;
+    padding:0;
+}
+
+#info li:before {
+    content:'▮';
+}
+
+#slotTemplate, #queueTemplate {
+    display:none;
+}
+@media (max-width: 840px) {
+  #infotext, #infotext p {
+    font-size: 12px !important;
+  }
+}
