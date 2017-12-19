@@ -1,20 +1,20 @@
 var slots = [{
     'name': 'lucas zion',
-    'type': 'chibi',
-    'status': 'sketch'
-}, {
-    'name': 'mattricole',
-    'type': 'fullcolor',
-    'status': 'not started'
-}, {
-    'name': 'baskervillealicia',
-    'type': 'splash color',
-    'status': 'not started'
-}];
+    'type': 'chibi'
+},
+{
+    'name': 'open',
+    'type': 'open'
+},
+{
+    'name': 'open',
+    'type': 'open'
+}
+];
 
 var queue = [{
-    'name': 'amy',
-    'type': 'chibi'
+    'name': 'none',
+    'type': ''
 }];
 
 var samples = ['chibi', 'sketch', 'splash', 'full'];

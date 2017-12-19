@@ -230,6 +230,10 @@ h5 {
     padding-right: 1rem;
 }
 
+.mdc-list-item__text__secondary {
+    color:var(--mdc-theme-primary);
+}
+
 #prices {
     margin: 0;
     padding-left: 1rem;
