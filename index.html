@@ -160,71 +160,63 @@
 													<input id="count" type="number" max="3" class="mdc-text-field__input" required>
 													<label for="count" class="mdc-text-field__label">
 								            Character Count
-							         	 </label>
+										         	 </label>
 													<div class="mdc-text-field__bottom-line"></div>
 												</div>
 											</div>
 											<div class="mdc-form-field">
-												<div class="mdc-select js-style-select" role="listbox" tabindex="0">
-													<span class="mdc-select__selected-text">Style</span>
-													<div class="mdc-simple-menu mdc-select__menu">
-														<ul class="mdc-list mdc-simple-menu__items">
-															<li class="mdc-list-item" role="option" tabindex="0">Select One</li>
-															<li class="mdc-list-item" role="option" tabindex="0">Sketch</li>
-															<li class="mdc-list-item" role="option" tabindex="0">Wash</li>
-															<li class="mdc-list-item" role="option" tabindex="0">Full Color</li>
-														</ul>
-													</div>
-												</div>
+												<select class="mdc-select js-style-select">
+													<option disabled selected>Select One</option>
+													<option>Sketch</option>
+													<option>Wash</option>
+													<option>Full Color</option>
+												</select>
 											</div>
 											<div class="mdc-form-field">
-												<div class="mdc-select js-type-select" role="listbox" tabindex="0">
-													<span class="mdc-select__selected-text">Type</span>
-													<div class="mdc-simple-menu mdc-select__menu">
-														<ul class="mdc-list mdc-simple-menu__items">
-															<li class="mdc-list-item" role="option" tabindex="0">Select One</li>
-															<li class="mdc-list-item" role="option" tabindex="0">Chibi</li>
-															<li class="mdc-list-item" role="option" tabindex="0">Bust</li>
-															<li class="mdc-list-item" role="option" tabindex="0">Waist</li>
-															<li class="mdc-list-item" role="option" tabindex="0">Fullbody</li>
-														</ul>
-													</div>
-												</div>
+												<select class="mdc-select js-type-select">
+													<option disabled selected>Select One</option>
+													<option>Chibi</option>
+													<option>Bust</option>
+													<option>Waist</option>
+													<option>Fullbody</option>
+												</select>
 											</div>
 										</div>
 									</div>
-									<button class="mdc-button" id="submitBtn" type="submit">
+								</form>
+							</div>
+							<button class="mdc-button" id="submitBtn" type="submit">
 									  Submit
 									</button>
-								</form>
-								<br>
-								<div id="result" class="alert basic">
-									<h5>estimate total</h5>
-									<span id="total"></span>
-								</div>
+							</form>
+							<br>
+							<div id="result" class="alert basic">
+								<h5>estimate total</h5>
+								<span id="total"></span>
 							</div>
 						</div>
 					</div>
 				</div>
-				<hr>
-				<div id="samples" class="slide">
-					<h4>samples</h4>
-					<div class="indent">
-						<div class="template sample-section">
-							<h5>chibi</h5>
-							<div class="grid gallery">
-								<div class="grid-inner">
-									<div class="cell template">
-										<a href="img/sample/full/0.png"><img src="img/sample/full/0.png" class="img-fluid"></a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-
 			</div>
+			<hr>
+			<div id="samples" class="slide">
+				<h4>samples</h4>
+				<div class="indent">
+					<div class="template sample-section">
+						<h5>chibi</h5>
+						<div class="grid gallery">
+							<div class="grid-inner">
+								<div class="cell template">
+									<a href="img/sample/full/0.png"><img src="img/sample/full/0.png" class="img-fluid"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
 		</div>
 
 		<div id="works">

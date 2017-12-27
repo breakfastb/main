@@ -237,6 +237,7 @@ h5 {
 #prices {
     margin: 0;
     padding-left: 1rem;
+    text-align:center;
 }
 
 .code {
@@ -343,6 +344,13 @@ a:hover {
     font-size: 1rem;
 }
 
+#submitBtn {
+    margin:10px;
+}
+
+#prices h4 {
+    text-align:left !important;
+}
 #calcPrice {
     text-align: center;
 }

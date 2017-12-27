@@ -1,15 +1,15 @@
 var slots = [{
-    'name': 'lucas zion',
-    'type': 'chibi'
-},
-{
-    'name': 'fallendrgmaster',
-    'type': 'full color fb'
-},
-{
-    'name': 'open',
-    'type': 'open'
-}
+        'name': 'lucas zion',
+        'type': 'chibi'
+    },
+    {
+        'name': 'fallendrgmaster',
+        'type': 'full color fb'
+    },
+    {
+        'name': 'open',
+        'type': 'open'
+    }
 ];
 
 var queue = [{
@@ -117,17 +117,6 @@ $('.gallery').each(function() {
     });
 });
 
-$(window).on('load resize', function() {
-    $('#top').css('padding-top', $('#header').height());
-});
-
-$(window).on('load', function() {
-    setTimeout(function() {
-        $('#load').fadeOut(200);
-        $('main').fadeIn(200);
-    }, 300);
-});
-
 var prices = [{
     'style': {
         'Sketch': 0,
@@ -142,77 +131,46 @@ var prices = [{
     }
 }];
 
-document.addEventListener("DOMContentLoaded", function(event) {
-    const styleSelect = document.querySelector(".js-style-select");
-    const typeSelect = document.querySelector(".js-type-select");
+$('#calcPrice').on('submit', function(e) {
+    e.preventDefault();
+});
 
-    mdc.select.MDCSelect.attachTo(styleSelect);
-    mdc.select.MDCSelect.attachTo(typeSelect);
+$('#submitBtn').on('click',function() {
+   var count = $('#count').val();
+   var total;
+    var style = $('.js-style-select option:selected').text();
+    var type = $('.js-type-select option:selected').text();
+    var stylePart;
+    var typePart;
+    
+    if (count > 0 && count <= 3 && style.length >= 0 && type.length > 0) {
+        var s_exist = $.inArray(style, Object.keys(prices[0].style));
+        var s_pos = Object.values(prices[0].style);
+        stylePart = s_pos[s_exist];
 
-    var choice;
-    var stylePart = 0;
-    var typePart = 0;
-    var total = 0;
-
-    styleSelect.addEventListener("MDCSelect:change", function(event) {
-        $('#submit').click()
-        if (event.detail.selectedIndex === 0) {
-            choice = null;
-        }
-        else {
-            choice = event.detail.selectedOptions[0].textContent;
-            //console.log(styleOption);
-            var exist = $.inArray(choice, Object.keys(prices[0].style));
-            if (exist >= 0) {
-                choice = Object.values(prices[0].style);
-                stylePart = choice[exist];
-                return stylePart;
-            }
-        }
-    });
-
-    typeSelect.addEventListener("MDCSelect:change", function(event) {
-        if (event.detail.selectedIndex === 0) {
-            choice = null;
-        }
-        else {
-            choice = event.detail.selectedOptions[0].textContent;
-            //console.log(typeOption);
-            var exist = $.inArray(choice, Object.keys(prices[0].type));
-            if (exist >= 0) {
-                choice = Object.values(prices[0].type);
-                typePart = choice[exist];
-                return typePart;
-            }
-        }
-    });
-
-    document.getElementById('calcPrice').addEventListener('submit', function(evt) {
-        evt.preventDefault();
-    });
-
-    $('#submitBtn').on('click', function() {
-        var count = $('#count').val();
+        var t_exist = $.inArray(type, Object.keys(prices[0].type));
+        var t_pos = Object.values(prices[0].type);
+        typePart = t_pos[t_exist];
+        
         var base = stylePart + typePart;
-        if (count > 0 && count <= 3 && stylePart >= 0 && typePart > 0) {
-            if (count == 1) {
-                total = base;
-            }
-            else if (count > 1) {
-                total = base + ((count - 1) * (base * 0.75));
-                total = total.toFixed(2);
-            }
+        
+        if (count == 1) {
+            total = base;
+        }
+        else if (count > 1) {
+            total = base + ((count - 1) * (base * 0.75));
+            total = total.toFixed(2);
+        }
 
-            $('#total').text(total);
-            $('#result').slideDown();
-        }
-        else if (count > 3) {
-            $('#result').slideUp();
-        }
-        else if (stylePart < 0) {
-            alert('wtf');
-        }
-    });
+        $('#total').text(total);
+        $('#result').slideDown();
+    }
+    else if (count > 3) {
+        $('#result').slideUp();
+    }
+    else if (stylePart < 0) {
+        alert('wtf');
+    } 
 });
 
 var personal = [{
@@ -221,11 +179,10 @@ var personal = [{
         'img': 'idlcbside.jpg',
         'date': 'February 2017',
         'link': {
-            'digital':'https://gum.co/AuGO',
-            'print':
-            {
-                'status':'in stock',
-                'href':'http://breakfastb.storenvy.com/products/21348635-i-dont-like-coffee-b-side'
+            'digital': 'https://gum.co/AuGO',
+            'print': {
+                'status': 'in stock',
+                'href': 'http://breakfastb.storenvy.com/products/21348635-i-dont-like-coffee-b-side'
             }
         },
         'desc': 'A sequel to my first doujin (IDLC). An assortment of comics/doodles. 16p'
@@ -355,11 +312,21 @@ $('#header a').on('click', function(event) {
     var headerHeight = $('#header').height();
     var target = $(this).attr("href"); //Get the target
     var scrollToPosition = $(target).offset().top - headerHeight;
-    
-    $('html').animate({ 'scrollTop': scrollToPosition }, 600, function(target){
+
+    $('html').animate({ 'scrollTop': scrollToPosition }, 600, function(target) {
         window.location.hash = target;
     });
-    
+
     e.preventDefault();
 });
-//$('#header').css('margin-top', $('#navtop').height());
+
+$(window).on('load resize', function() {
+    $('#top').css('padding-top', $('#header').height());
+});
+
+$(window).on('load', function() {
+    setTimeout(function() {
+        $('#load').fadeOut(200);
+        $('main').fadeIn(200);
+    }, 300);
+});
