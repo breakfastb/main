@@ -3,8 +3,8 @@ var slots = [{
     'type': 'chibi'
 },
 {
-    'name': 'open',
-    'type': 'open'
+    'name': 'fallendrgmaster',
+    'type': 'full color fb'
 },
 {
     'name': 'open',
@@ -220,7 +220,14 @@ var personal = [{
     'info': {
         'img': 'idlcbside.jpg',
         'date': 'February 2017',
-        'link': {},
+        'link': {
+            'digital':'https://gum.co/AuGO',
+            'print':
+            {
+                'status':'in stock',
+                'href':'http://breakfastb.storenvy.com/products/21348635-i-dont-like-coffee-b-side'
+            }
+        },
         'desc': 'A sequel to my first doujin (IDLC). An assortment of comics/doodles. 16p'
     }
 }, {
@@ -241,7 +248,7 @@ var personal = [{
         'link': {
             'digital': 'https://gumroad.com/l/ppyVX',
             'print': {
-                'status': 'in stock',
+                'status': 'out of stock',
                 'href': 'http://breakfastb.storenvy.com/products/21348551-summer-days'
             }
         },
