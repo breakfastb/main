@@ -3,8 +3,8 @@ var slots = [{
         'type': 'chibi'
     },
     {
-        'name': 'fallendrgmaster',
-        'type': 'full color fb'
+        'name': 'snakevenom',
+        'type': 'wash fb'
     },
     {
         'name': 'open',
