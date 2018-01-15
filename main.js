@@ -1,14 +1,14 @@
 var slots = [{
         'name': 'lucas zion',
-        'type': 'chibi'
+        'type': 'chibix5'
     },
     {
-        'name': 'snakevenom',
-        'type': 'wash fb'
+        'name': 'rche',
+        'type': 'wash bust'
     },
     {
-        'name': 'open',
-        'type': 'open'
+        'name': 'rysear',
+        'type': 'wash chibix2'
     }
 ];
 
