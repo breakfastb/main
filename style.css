@@ -10,6 +10,11 @@
 body,
 html {
     background: #fff;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 body {
@@ -28,7 +33,7 @@ body {
     width: 100%;
     background-image: url('img/neet.png');
     background-size: cover;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     color: #fff;
     margin-top: 0px;
 }
@@ -52,7 +57,7 @@ body {
     display: flex;
     justify-content: center;
     align-content: center;
-    height:100%;
+    height: 100%;
     width: 100%;
     background: #fff;
     z-index: 5999 !important;
@@ -231,13 +236,13 @@ h5 {
 }
 
 .mdc-list-item__text__secondary {
-    color:var(--mdc-theme-primary);
+    color: var(--mdc-theme-primary);
 }
 
 #prices {
     margin: 0;
     padding-left: 1rem;
-    text-align:center;
+    text-align: center;
 }
 
 .code {
@@ -291,7 +296,7 @@ a:focus {
     text-decoration: none;
     color: var(--mdc-theme-primary);
     transition: 200ms;
-    font-size:inherit !important;
+    font-size: inherit !important;
 }
 
 a:visited {
@@ -302,22 +307,32 @@ a:hover {
     color: var(--mdc-theme-p-light);
     transition: 200ms;
 }
+
+:not(.mdc-list--non-interactive)>.mdc-list-item::after,
+:not(.mdc-list--non-interactive)>.mdc-list-item::before {
+    background: transparent !important;
+}
+
 .social {
-    padding:0;
-    width:100%;
+    padding: 0;
+    width: 100%;
 }
+
 .social li {
-    list-style-type:none;
-    display:inline;
+    list-style-type: none;
+    display: inline;
     margin: 0 1rem;
-    font-size:1.5rem;
+    font-size: 1.5rem;
 }
+
 .social a {
-    color:#fff;
+    color: #fff;
 }
-.social a:hover, .social a:hover svg {
-    color:var(--mdc-theme-primary);
-    fill:var(--mdc-theme-primary);
+
+.social a:hover,
+.social a:hover svg {
+    color: var(--mdc-theme-primary);
+    fill: var(--mdc-theme-primary);
 }
 
 #processList .cell {
@@ -345,12 +360,13 @@ a:hover {
 }
 
 #submitBtn {
-    margin:10px;
+    margin: 10px;
 }
 
 #prices h4 {
-    text-align:left !important;
+    text-align: left !important;
 }
+
 #calcPrice {
     text-align: center;
 }
@@ -378,107 +394,129 @@ a:hover {
 
 #works .grid-inner {
     flex-wrap: wrap;
-    justify-content:flex-start;
-    width:auto !important;
+    justify-content: flex-start;
+    width: auto !important;
     padding-left: 1rem;
 }
+
 #works .mdc-card,
 #works .cell {
     margin: 10px;
     width: calc(100%/2.2) !important;
     max-width: calc(100%/2.2) !important;
     display: inline-block;
-    flex-grow:1;
-    flex-basis:calc(100%/2.2) !important;
-    overflow:hidden;
+    flex-grow: 1;
+    flex-basis: calc(100%/2.2) !important;
+    overflow: hidden;
 }
 
 #works .mdc-card__media {
     background-size: cover;
-    background-position:center top;
+    background-position: center top;
     background-repeat: no-repeat;
     height: 300px;
 }
-#works .mdc-button:not(:disabled), #works .mdc-button a {
-    color:#000 !important;
-    height:2.5rem;
-    max-width:100%;
-    margin:3px;
+
+#works .mdc-button:not(:disabled),
+#works .mdc-button a {
+    color: #000 !important;
+    height: 2.5rem;
+    max-width: 100%;
+    margin: 3px;
 }
+
 .buttons {
-    text-align:center;
+    text-align: center;
 }
+
 .mdc-card__primary {
-    display:flex;
-    flex-direction:column;
+    display: flex;
+    flex-direction: column;
 }
+
 .work-link .text {
-    font-size:0.7rem !important;
+    font-size: 0.7rem !important;
 }
+
 #works .mdc-button--stroked:not(:disabled) {
-    border-color:#808080;
+    border-color: #808080;
 }
+
 .badge {
     margin: 2px;
-    background:#ccc;
-    padding:3px 6px;
-    font-size:9px !important;
-    border-radius:5px;
+    background: #ccc;
+    padding: 3px 6px;
+    font-size: 9px !important;
+    border-radius: 5px;
 }
+
 .hidden {
-    display:none;
+    display: none;
 }
+
 .mdc-card__primary .mdc-card__title--large {
-    font-size:1.2em;
-    font-weight:bold;
-    margin-bottom:0px !important;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 0px !important;
     padding-bottom: 0px;
-    text-transform:capitalize;
+    text-transform: capitalize;
 }
+
 .mdc-card__subtitle {
-    text-transform:uppercase;
-    font-size:0.7em;
-    letter-spacing:0.15em;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    letter-spacing: 0.15em;
 }
+
 #about {
-    background:var(--mdc-theme-p-dark);
-    color:#fff;
-    overflow:hidden;
+    background: var(--mdc-theme-p-dark);
+    color: #fff;
+    overflow: hidden;
 }
+
 #about .container {
-    padding:0rem;
+    padding: 0rem;
 }
-#about .grid-inner, #about .grid {
-    align-items:center;
+
+#about .grid-inner,
+#about .grid {
+    align-items: center;
 }
+
 #about .cell:first-child p {
-    font-size:0.9rem;
+    font-size: 0.9rem;
 }
+
 #about .cell:nth-of-type(2) {
-    width:100%;
-    justify-content:center;
-    align-items:flex-end;
-    display:flex;
-    align-self:flex-end;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
+    display: flex;
+    align-self: flex-end;
 }
+
 #about .cell:first-child {
-    align-self:center;
-    padding:1.5rem;
-    padding-bottom:0;
-    text-align:justify;
+    align-self: center;
+    padding: 1.5rem;
+    padding-bottom: 0;
+    text-align: justify;
 }
+
 #about img {
-    object-fit:cover;
+    object-fit: cover;
 }
+
 #stats {
-    padding:0 1rem;
-    padding-bottom:0px;
+    padding: 0 1rem;
+    padding-bottom: 0px;
 }
+
 #stats li {
-    list-style-type:none;
+    list-style-type: none;
 }
+
 #stats li:before {
-    content:'▮ ';
+    content: '▮ ';
 }
 
 
@@ -487,7 +525,7 @@ a:hover {
         height: 200px;
     }
     #load {
-        margin-top:200px;
+        margin-top: 200px;
     }
 }
 
@@ -509,10 +547,10 @@ a:hover {
         max-height: 100px;
     }
     #about .grid-inner {
-        flex-direction:column;
+        flex-direction: column;
     }
     #about img {
-        height:200px;
+        height: 200px;
     }
 }
 
@@ -529,6 +567,6 @@ a:hover {
     #works .mdc-card__media {
         background-size: cover;
         background-repeat: no-repeat;
-        height:400px;
+        height: 400px;
     }
 }
