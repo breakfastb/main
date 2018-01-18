@@ -326,7 +326,15 @@ $(window).on('load resize', function() {
 
 $(window).on('load', function() {
     setTimeout(function() {
-        $('#load').fadeOut(200);
-        $('main').fadeIn(200);
-    }, 300);
+        $('#load').fadeOut(100);
+        $('main').fadeIn(100);
+    }, 100);
+    
+    if(slots[2].name.length > 1) {
+        $('#fullSlots').show();
+    }
+    
+    else {
+        $('#fullSlots').hide();
+    }
 });
