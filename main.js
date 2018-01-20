@@ -13,8 +13,8 @@ var slots = [{
 ];
 
 var queue = [{
-    'name': 'none',
-    'type': ''
+    'name': 'mixtheskele',
+    'type': 'waist wash'
 }];
 
 var samples = ['chibi', 'sketch', 'splash', 'full'];
