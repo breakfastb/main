@@ -15,6 +15,9 @@ var slots = [{
 var queue = [{
     'name': 'mixtheskele',
     'type': 'waist wash'
+},{
+    'name':'@Lilypad_online',
+    'type':'unknown'
 }];
 
 var samples = ['chibi', 'sketch', 'splash', 'full'];
