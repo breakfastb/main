@@ -3,21 +3,16 @@ var slots = [{
         'type': 'chibix5'
     },
     {
-        'name': 'rche',
-        'type': 'wash bust'
+        'name': 'mixtheskele',
+        'type': 'waist wash'
     },
     {
-        'name': 'rysear',
-        'type': 'wash chibix2'
+        'name':'@Lilypad_online',
+        'type':'unknown'
     }
 ];
 
 var queue = [{
-    'name': 'mixtheskele',
-    'type': 'waist wash'
-},{
-    'name':'@Lilypad_online',
-    'type':'unknown'
 }];
 
 var samples = ['chibi', 'sketch', 'splash', 'full'];
