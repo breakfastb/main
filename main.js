@@ -13,6 +13,8 @@ var slots = [{
 ];
 
 var queue = [{
+    'name':'rche',
+    'type':'wash avatar'
 }];
 
 var samples = ['chibi', 'sketch', 'splash', 'full'];
