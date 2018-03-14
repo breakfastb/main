@@ -432,12 +432,18 @@ a:hover {
 .mdc-card__primary {
     display: flex;
     flex-direction: column;
+    padding:1rem;
 }
 
+.mdc-card__supporting-text {
+    padding:1rem;
+}
 .work-link .text {
     font-size: 0.7rem !important;
 }
-
+.mdc-card__title {
+    margin-top:0 !important;
+}
 #works .mdc-button--stroked:not(:disabled) {
     border-color: #808080;
 }
