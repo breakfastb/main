@@ -250,10 +250,10 @@ var assorted = [{
         'img': 'lifeguard.jpg',
         'date': 'August 2016',
         'link': {
-            'read@tapas': '#https://tapas.io/episode/429047',
+            'read@tapas': 'https://tapas.io/episode/429047',
             'print': {
                 'status': 'in stock',
-                'href': 'http://www.lulu.com/shop/http://www.lulu.com/shop/lilies-anthology/lilies-vol-1-water-lily/paperback/product-23033256.html'
+                'href': 'http://www.lulu.com/shop/lilies-anthology/lilies-vol-1-water-lily/paperback/product-23033256.html'
             }
         },
         'desc': "My submission to <a href='http://liliesanthology.tumblr.com/'>Lilies Anthology</a> vol.1! The theme was water. The story follows Ran, an intrepid lifeguard, and Meri, a shy college student."
@@ -269,7 +269,12 @@ $.each(personal, function(k, v) {
     $.each(v.info.link, function(l, m) {
         var btn = card.find('.work-link').clone().removeClass('hidden');
         btn.find('.mdc-button').find('.text').text(l);
-        btn.attr('href', m);
+        if(m.length > 0) {
+            btn.attr('href', m);   
+        }
+        else {
+            btn.attr('href', m.href);
+        }
         btn.appendTo(card.find('.buttons'));
 
         if (m.status != null) {
@@ -293,7 +298,12 @@ $.each(assorted, function(k, v) {
     $.each(v.info.link, function(l, m) {
         var btn = card.find('.work-link').clone().removeClass('hidden');
         btn.find('.mdc-button').find('.text').text(l);
-        btn.attr('href', m);
+        if(m.length > 0) {
+            btn.attr('href', m);   
+        }
+        else {
+            btn.attr('href', m.href);
+        }
         btn.appendTo(card.find('.buttons'));
 
         if (m.status != null) {
@@ -310,14 +320,14 @@ $.each(assorted, function(k, v) {
 
 $('#header a').on('click', function(event) {
     var headerHeight = $('#header').height();
-    var target = $(this).attr("href"); //Get the target
+    var target = $(this).attr('href'); //Get the target
     var scrollToPosition = $(target).offset().top - headerHeight;
 
     $('html').animate({ 'scrollTop': scrollToPosition }, 600, function(target) {
-        window.location.hash = target;
+        //.location.hash = target;
     });
-
-    e.preventDefault();
+    
+    //event.preventDefault();
 });
 
 $(window).on('load resize', function() {
