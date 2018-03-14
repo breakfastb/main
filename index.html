@@ -157,29 +157,55 @@
 										<div class="grid-inner">
 											<div class="mdc-form-field">
 												<div class="mdc-text-field" data-mdc-auto-init="MDCTextField">
-													<input id="count" type="number" max="3" class="mdc-text-field__input" required>
-													<label for="count" class="mdc-text-field__label">
-								            Character Count
-										         	 </label>
-													<div class="mdc-text-field__bottom-line"></div>
+													<input class="mdc-text-field__input" type="number" id="count">
+													<label for="count" class="mdc-floating-label">Character Count</label>
+													<div class="mdc-line-ripple"></div>
 												</div>
 											</div>
-											<div class="mdc-form-field">
-												<select class="mdc-select js-style-select">
-													<option disabled selected>Select One</option>
-													<option>Sketch</option>
-													<option>Wash</option>
-													<option>Full Color</option>
-												</select>
+
+											<div class="mdc-select" role="listbox" id="styleSelect">
+												<div class="mdc-select__surface" tabindex="0">
+													<div class="mdc-select__label">Color Style</div>
+													<div class="mdc-select__selected-text"></div>
+													<div class="mdc-select__bottom-line"></div>
+												</div>
+												<div class="mdc-menu mdc-select__menu">
+													<ul class="mdc-list mdc-menu__items">
+														<li class="mdc-list-item" role="option" tabindex="0">
+															Sketch
+														</li>
+														<li class="mdc-list-item" role="option" tabindex="0">
+															Wash
+														</li>
+														<li class="mdc-list-item" role="option" tabindex="0">
+															Full Color
+														</li>
+													</ul>
+												</div>
 											</div>
-											<div class="mdc-form-field">
-												<select class="mdc-select js-type-select">
-													<option disabled selected>Select One</option>
-													<option>Chibi</option>
-													<option>Bust</option>
-													<option>Waist</option>
-													<option>Fullbody</option>
-												</select>
+											
+											<div class="mdc-select" role="listbox" id="typeSelect">
+												<div class="mdc-select__surface" tabindex="0">
+													<div class="mdc-select__label">Select Type</div>
+													<div class="mdc-select__selected-text"></div>
+													<div class="mdc-select__bottom-line"></div>
+												</div>
+												<div class="mdc-menu mdc-select__menu">
+													<ul class="mdc-list mdc-menu__items">
+														<li class="mdc-list-item" role="option" tabindex="0">
+															Chibi
+														</li>
+														<li class="mdc-list-item" role="option" tabindex="0">
+															Bust
+														</li>
+														<li class="mdc-list-item" role="option" tabindex="0">
+															Waist
+														</li>
+														<li class="mdc-list-item" role="option" tabindex="0">
+															Fullbody
+														</li>
+													</ul>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -311,6 +337,12 @@
 		window.mdc.autoInit();
 		var toolbar = mdc.toolbar.MDCToolbar.attachTo(document.querySelector('.mdc-toolbar'));
 		toolbar.fixedAdjustElement = document.querySelector('.mdc-toolbar-fixed-adjust');
+		
+		/*const select = new mdc.select.MDCSelect(document.querySelector('.mdc-select'));
+		select.listen('MDCSelect:change', () => {
+		  alert(`Selected "${select.selectedOptions[0].textContent}" at index ${select.selectedIndex} ` +
+		        `with value "${select.value}"`);
+		});*/
 	</script>
 </body>
 

@@ -7,14 +7,14 @@ var slots = [{
         'type': 'waist wash'
     },
     {
-        'name':'@Lilypad_online',
-        'type':'unknown'
+        'name': '@Lilypad_online',
+        'type': 'unknown'
     }
 ];
 
 var queue = [{
-    'name':'rche',
-    'type':'wash avatar'
+    'name': 'rche',
+    'type': 'wash avatar'
 }];
 
 var samples = ['chibi', 'sketch', 'splash', 'full'];
@@ -135,11 +135,16 @@ $('#calcPrice').on('submit', function(e) {
     e.preventDefault();
 });
 
-$('#submitBtn').on('click',function() {
-   var count = $('#count').val();
-   var total;
-    var style = $('.js-style-select option:selected').text();
-    var type = $('.js-type-select option:selected').text();
+const styleSelect = new mdc.select.MDCSelect(document.querySelector('#styleSelect'));
+const typeSelect = new mdc.select.MDCSelect(document.querySelector('#typeSelect'));
+
+$('#submitBtn').on('click', function() {
+    var count = $('#count').val();
+    var total;
+    //var style = $('.js-style-select option:selected').text();
+    var style = jQuery.trim(styleSelect.value);
+    //var type = $('.js-type-select option:selected').text();
+    var type = jQuery.trim(typeSelect.value);
     var stylePart;
     var typePart;
     
@@ -147,13 +152,13 @@ $('#submitBtn').on('click',function() {
         var s_exist = $.inArray(style, Object.keys(prices[0].style));
         var s_pos = Object.values(prices[0].style);
         stylePart = s_pos[s_exist];
-
+        
         var t_exist = $.inArray(type, Object.keys(prices[0].type));
         var t_pos = Object.values(prices[0].type);
         typePart = t_pos[t_exist];
-        
+
         var base = stylePart + typePart;
-        
+
         if (count == 1) {
             total = base;
         }
@@ -170,7 +175,7 @@ $('#submitBtn').on('click',function() {
     }
     else if (stylePart < 0) {
         alert('wtf');
-    } 
+    }
 });
 
 var personal = [{
@@ -269,8 +274,8 @@ $.each(personal, function(k, v) {
     $.each(v.info.link, function(l, m) {
         var btn = card.find('.work-link').clone().removeClass('hidden');
         btn.find('.mdc-button').find('.text').text(l);
-        if(m.length > 0) {
-            btn.attr('href', m);   
+        if (m.length > 0) {
+            btn.attr('href', m);
         }
         else {
             btn.attr('href', m.href);
@@ -298,8 +303,8 @@ $.each(assorted, function(k, v) {
     $.each(v.info.link, function(l, m) {
         var btn = card.find('.work-link').clone().removeClass('hidden');
         btn.find('.mdc-button').find('.text').text(l);
-        if(m.length > 0) {
-            btn.attr('href', m);   
+        if (m.length > 0) {
+            btn.attr('href', m);
         }
         else {
             btn.attr('href', m.href);
@@ -326,7 +331,7 @@ $('#header a').on('click', function(event) {
     $('html').animate({ 'scrollTop': scrollToPosition }, 600, function(target) {
         //.location.hash = target;
     });
-    
+
     //event.preventDefault();
 });
 
@@ -339,11 +344,11 @@ $(window).on('load', function() {
         $('#load').fadeOut(100);
         $('main').fadeIn(100);
     }, 100);
-    
-    if(slots[2].name.length > 1) {
+
+    if (slots[2].name.length > 1) {
         $('#fullSlots').show();
     }
-    
+
     else {
         $('#fullSlots').hide();
     }

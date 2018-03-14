@@ -23,6 +23,7 @@ body {
     margin: 0;
     cursor: default;
     overflow-x: hidden;
+    overflow-y:scroll !important;
 }
 
 #top {
@@ -442,7 +443,7 @@ a:hover {
     font-size: 0.7rem !important;
 }
 .mdc-card__title {
-    margin-top:0 !important;
+    /*margin-top:0 !important;*/
 }
 #works .mdc-button--stroked:not(:disabled) {
     border-color: #808080;
