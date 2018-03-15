@@ -15,6 +15,9 @@ var slots = [{
 var queue = [{
     'name': 'rche',
     'type': 'wash avatar'
+}, {
+    'name': 'megatolmen',
+    'type': 'fb fullcolor'
 }];
 
 var samples = ['chibi', 'sketch', 'splash', 'full'];
