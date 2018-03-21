@@ -18,6 +18,9 @@ var queue = [{
 }, {
     'name': 'megatolmen',
     'type': 'fb fullcolor'
+}, {
+    'name':'valkurion7',
+    'type':'splash chibis'
 }];
 
 var samples = ['chibi', 'sketch', 'splash', 'full'];
