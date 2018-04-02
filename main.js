@@ -1,21 +1,33 @@
+$(window).on('load', function() {
+    setTimeout(function() {
+        $('#load').fadeOut(100);
+        $('main').fadeIn(100);
+    }, 100);
+
+    if (slots[2].name.length > 1) {
+        $('#fullSlots').show();
+    }
+
+    else {
+        $('#fullSlots').hide();
+    }
+});
+
 var slots = [{
         'name': 'lucas zion',
         'type': 'chibix5'
     },
     {
-        'name': 'mixtheskele',
-        'type': 'waist wash'
-    },
-    {
         'name': '@Lilypad_online',
         'type': 'unknown'
+    },
+    {
+        'name': 'rche',
+        'type': 'wash avatar'
     }
 ];
 
 var queue = [{
-    'name': 'rche',
-    'type': 'wash avatar'
-}, {
     'name': 'megatolmen',
     'type': 'fb fullcolor'
 }, {
@@ -343,19 +355,4 @@ $('#header a').on('click', function(event) {
 
 $(window).on('load resize', function() {
     $('#top').css('padding-top', $('#header').height());
-});
-
-$(window).on('load', function() {
-    setTimeout(function() {
-        $('#load').fadeOut(100);
-        $('main').fadeIn(100);
-    }, 100);
-
-    if (slots[2].name.length > 1) {
-        $('#fullSlots').show();
-    }
-
-    else {
-        $('#fullSlots').hide();
-    }
 });
