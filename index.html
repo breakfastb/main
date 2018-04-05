@@ -6,7 +6,7 @@
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>breakfastb</title>
-	<link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
 	<link rel="stylesheet" href="magnific-popup.css">
 	<link rel="stylesheet" href="style.css">
@@ -157,55 +157,32 @@
 										<div class="grid-inner">
 											<div class="mdc-form-field">
 												<div class="mdc-text-field" data-mdc-auto-init="MDCTextField">
-													<input class="mdc-text-field__input" type="number" id="count">
+													<input class="mdc-text-field__input" type="number" id="count" max="3">
 													<label for="count" class="mdc-floating-label">Character Count</label>
 													<div class="mdc-line-ripple"></div>
 												</div>
 											</div>
 
-											<div class="mdc-select" role="listbox" id="styleSelect">
-												<div class="mdc-select__surface" tabindex="0">
-													<div class="mdc-select__label">Color Style</div>
-													<div class="mdc-select__selected-text"></div>
-													<div class="mdc-select__bottom-line"></div>
-												</div>
-												<div class="mdc-menu mdc-select__menu">
-													<ul class="mdc-list mdc-menu__items">
-														<li class="mdc-list-item" role="option" tabindex="0">
-															Sketch
-														</li>
-														<li class="mdc-list-item" role="option" tabindex="0">
-															Wash
-														</li>
-														<li class="mdc-list-item" role="option" tabindex="0">
-															Full Color
-														</li>
-													</ul>
-												</div>
+											<div class="mdc-select" id="typeSelect">
+												<select class="mdc-select__native-control">
+													<option value="" disabled selected></option>
+													<option value="5">Chibi</option>
+													<option value="10">Waist</option>
+													<option value="15">Bust</option>
+													<option value="20">Fullbody</option>
+												</select>
+												<div class="mdc-select__label">Comm Type</div>
+												<div class="mdc-select__bottom-line"></div>
 											</div>
-											
-											<div class="mdc-select" role="listbox" id="typeSelect">
-												<div class="mdc-select__surface" tabindex="0">
-													<div class="mdc-select__label">Select Type</div>
-													<div class="mdc-select__selected-text"></div>
-													<div class="mdc-select__bottom-line"></div>
-												</div>
-												<div class="mdc-menu mdc-select__menu">
-													<ul class="mdc-list mdc-menu__items">
-														<li class="mdc-list-item" role="option" tabindex="0">
-															Chibi
-														</li>
-														<li class="mdc-list-item" role="option" tabindex="0">
-															Bust
-														</li>
-														<li class="mdc-list-item" role="option" tabindex="0">
-															Waist
-														</li>
-														<li class="mdc-list-item" role="option" tabindex="0">
-															Fullbody
-														</li>
-													</ul>
-												</div>
+											<div class="mdc-select" id="styleSelect">
+												<select class="mdc-select__native-control">
+													<option value="" disabled selected></option>
+													<option value="0">sketch</option>
+													<option value="2">wash</option>
+													<option value="5">full color</option>
+												</select>
+												<div class="mdc-select__label">Comm Style</div>
+												<div class="mdc-select__bottom-line"></div>
 											</div>
 										</div>
 									</div>
@@ -214,7 +191,6 @@
 							<button class="mdc-button" id="submitBtn" type="submit">
 									  Submit
 									</button>
-							</form>
 							<br>
 							<div id="result" class="alert basic">
 								<h5>estimate total</h5>
@@ -329,7 +305,7 @@
 		</div>
 	</div>
 
-	<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+	<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="jquery.magnific-popup.min.js"></script>
 	<script src="main.js"></script>
@@ -337,7 +313,7 @@
 		window.mdc.autoInit();
 		var toolbar = mdc.toolbar.MDCToolbar.attachTo(document.querySelector('.mdc-toolbar'));
 		toolbar.fixedAdjustElement = document.querySelector('.mdc-toolbar-fixed-adjust');
-		
+
 		/*const select = new mdc.select.MDCSelect(document.querySelector('.mdc-select'));
 		select.listen('MDCSelect:change', () => {
 		  alert(`Selected "${select.selectedOptions[0].textContent}" at index ${select.selectedIndex} ` +

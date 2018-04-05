@@ -37,60 +37,6 @@ var queue = [{
 
 var samples = ['chibi', 'sketch', 'splash', 'full'];
 
-function commcalc() {
-    var total;
-    var count = $('#count').val();
-    var output = $('#output');
-
-    var style = $('#style').val();
-    var stylecnt;
-    switch (style) {
-        case "sketch":
-            stylecnt = 0;
-            break;
-        case "mono":
-            stylecnt = 2;
-            break;
-        case "full":
-            stylecnt = 5;
-            break;
-        default:
-            break;
-    }
-
-    var type = $('#type').val();
-    var typecount;
-    switch (type) {
-        case "chibi":
-            typecount = 5;
-            break;
-        case "bust":
-            typecount = 10;
-            break;
-        case "waist":
-            typecount = 15;
-            break;
-        case "fb":
-            typecount = 20;
-            break;
-        default:
-            break;
-    }
-
-    if (count == 1) {
-        total = stylecnt + typecount;
-    }
-    else if (count < 1) {
-        alert('You have to enter an amount!');
-    }
-    else {
-        var base = (stylecnt + typecount);
-        total = base + ((count - 1) * (base * 0.75));
-    }
-    output.text(total + "USD");
-    var price = $('#price');
-}
-
 $(document).ready(function() {
     $('#result').hide();
     $('#top').css('padding-top', $('#header').height());
@@ -135,46 +81,31 @@ $('.gallery').each(function() {
     });
 });
 
-var prices = [{
-    'style': {
-        'Sketch': 0,
-        'Wash': 2,
-        'Full Color': 5
-    },
-    'type': {
-        'Chibi': 5,
-        'Bust': 10,
-        'Waist': 15,
-        'Fullbody': 20
-    }
-}];
-
 $('#calcPrice').on('submit', function(e) {
     e.preventDefault();
 });
 
+var stylePart;
+var typePart;
 const styleSelect = new mdc.select.MDCSelect(document.querySelector('#styleSelect'));
+styleSelect.listen('change', () => {
+  stylePart = styleSelect.value;
+  return stylePart;
+});
+
 const typeSelect = new mdc.select.MDCSelect(document.querySelector('#typeSelect'));
+typeSelect.listen('change', () => {
+    typePart = typeSelect.value;
+    return typePart;
+});
+
 
 $('#submitBtn').on('click', function() {
     var count = $('#count').val();
     var total;
-    //var style = $('.js-style-select option:selected').text();
-    var style = jQuery.trim(styleSelect.value);
-    //var type = $('.js-type-select option:selected').text();
-    var type = jQuery.trim(typeSelect.value);
-    var stylePart;
-    var typePart;
-    
-    if (count > 0 && count <= 3 && style.length >= 0 && type.length > 0) {
-        var s_exist = $.inArray(style, Object.keys(prices[0].style));
-        var s_pos = Object.values(prices[0].style);
-        stylePart = s_pos[s_exist];
-        
-        var t_exist = $.inArray(type, Object.keys(prices[0].type));
-        var t_pos = Object.values(prices[0].type);
-        typePart = t_pos[t_exist];
-
+    typePart = parseInt(typePart,10);
+    stylePart = parseInt(stylePart,10);
+    if (count > 0 && count <= 3) {
         var base = stylePart + typePart;
 
         if (count == 1) {
@@ -188,11 +119,8 @@ $('#submitBtn').on('click', function() {
         $('#total').text(total);
         $('#result').slideDown();
     }
-    else if (count > 3) {
+    else {
         $('#result').slideUp();
-    }
-    else if (stylePart < 0) {
-        alert('wtf');
     }
 });
 

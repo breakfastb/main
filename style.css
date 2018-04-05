@@ -159,6 +159,10 @@ main {
     font-size: 0.9rem !important;
 }
 
+select {
+    text-transform:lowercase;
+}
+
 #result {
     text-align: center;
 }
