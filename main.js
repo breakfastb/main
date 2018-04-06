@@ -18,19 +18,16 @@ var slots = [{
         'type': 'chibix5'
     },
     {
-        'name': '@Lilypad_online',
-        'type': 'unknown'
-    },
-    {
         'name': 'rche',
         'type': 'wash avatar'
+    },
+    {
+        'name': 'megatolmen',
+        'type': 'fb fullcolor'
     }
 ];
 
 var queue = [{
-    'name': 'megatolmen',
-    'type': 'fb fullcolor'
-}, {
     'name':'valkurion7',
     'type':'splash chibis'
 }];
