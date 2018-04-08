@@ -33,6 +33,9 @@ var queue = [{
 },{
     'name': 'Freddy LoveJoy',
     'type':'fb fullcolor'
+},{
+    'name':'wakai',
+    'type':'bust fullcolor'
 }];
 
 var samples = ['chibi', 'sketch', 'splash', 'full'];
