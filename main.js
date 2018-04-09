@@ -108,7 +108,7 @@ $('#submitBtn').on('click', function() {
     var total;
     typePart = parseInt(typePart,10);
     stylePart = parseInt(stylePart,10);
-    if (count > 0 && count <= 3) {
+    if (count > 0) {
         var base = stylePart + typePart;
 
         if (count == 1) {
