@@ -13,27 +13,21 @@ $(window).on('load', function() {
     }
 });
 
-var slots = [{
-        'name': 'lucas zion',
-        'type': 'chibix5'
-    },
+var slots = [
     {
         'name': 'rche',
         'type': 'wash avatar'
-    },
-    {
-        'name': 'megatolmen',
-        'type': 'fb fullcolor'
+    },{
+        'name':'valkurion7',
+        'type':'splash chibis'
+    },{
+        'name': 'Freddy LoveJoy',
+        'type':'fb fullcolor'
     }
 ];
 
-var queue = [{
-    'name':'valkurion7',
-    'type':'splash chibis'
-},{
-    'name': 'Freddy LoveJoy',
-    'type':'fb fullcolor'
-},{
+var queue = [
+    {
     'name':'wakai',
     'type':'bust fullcolor'
 }];
