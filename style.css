@@ -49,6 +49,7 @@ h4:before {
     background-image:url('img/ny.png');
     height:500px;
     display:flex;
+    background-attachment:fixed;
 }
 
 #top h1 {

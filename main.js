@@ -138,7 +138,7 @@ var works = [{
             'read@tapas': 'https://tapas.io/series/helplessoneechan',
             'read@webtoon': 'http://www.webtoons.com/en/challenge/helpless-oneechan-next-door/list?title_no=111955'
         },
-        'desc': "Submission to Lilies Anthology vol2 that didn't make it. A story about Mira, a fallen star, and Sophie, the girl who falls in love with her."
+        'desc': "A bi-weekly webcomic about Saki, a college grad who's useless, and Ume, a college student who's capable."
     }
 }, {
     'title': 'Shining Star',
