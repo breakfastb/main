@@ -5,24 +5,27 @@ $(window).on('load', function() {
     }, 100);
 
     if (slots[2].name.length > 1) {
-        $('#fullSlots').show();
+        $('#status').text('full');
     }
 
     else {
-        $('#fullSlots').hide();
+        $('#status').text('open');
     }
 });
 
 var slots = [
     {
         'name': 'rche',
-        'type': 'wash avatar'
+        'type': 'wash avatar',
+        'status':1
     },{
         'name':'valkurion7',
-        'type':'splash chibis'
+        'type':'splash chibis',
+        'status':0
     },{
         'name': 'Freddy LoveJoy',
-        'type':'fb fullcolor'
+        'type':'fb fullcolor',
+        'status':0
     }
 ];
 
@@ -34,38 +37,30 @@ var queue = [
 
 var samples = ['chibi', 'sketch', 'splash', 'full'];
 
-$(document).ready(function() {
-    $('#result').hide();
-    $('#top').css('padding-top', $('#header').height());
+$.each(slots,function(k,v) {
+    var slot = $('#slots .template').clone().removeClass('template');
+    slot.find('h5.mb-1').text(v.name);
+    slot.find('p.mb-1').text(v.type);
+    slot.find('.progress-bar').css('width',v.status*25+'%');
+    slot.appendTo($('#slots'));
 });
 
-$.each(slots, function(k, v) {
-    var slot = $('#slotList .template').clone().removeClass('template');
-    slot.find('.name').text(v.name);
-    slot.find('.type').text(v.type);
-    slot.appendTo($('#slotList'));
-});
-
-$.each(queue, function(k, v) {
-    var slot = $('#queueList .template').clone().removeClass('template');
-    slot.find('.name').text(v.name);
-    slot.find('.type').text(v.type);
-    slot.appendTo($('#queueList'));
+$.each(queue,function(k,v) {
+    var slot = $('#queue .template').clone().removeClass('template');
+    slot.find('h5.mb-1').text(v.name);
+    slot.find('p.mb-1').text(v.type);
+    slot.appendTo($('#queue'));
 });
 
 $.each(samples, function(k, v) {
-    var template = $('#samples').find('.indent').children('.template').clone().removeClass('template');
-    template.attr('id', v);
-    template.find('h5').text(v);
-    template.appendTo($('#samples').find($('.indent')));
     for (var i = 0; i < 3; i++) {
+        var link = $('#'+v).find('.gallery').find('.template').clone().removeClass('template');
         var img = './img/sample/' + v + '/' + i + '.png';
-        var galleryItem = $('#samples').find('#' + v).find('.template').clone().removeClass('template');
-        galleryItem.find('a').attr('href', img);
-        galleryItem.find('img').attr('src', img);
-        galleryItem.appendTo($('#samples').find('#' + v).find('.gallery').find('.grid-inner'));
+        link.find('a').attr('href',img);
+        link.find('img').attr('src',img);
+        link.appendTo($('#'+v).find('.gallery'));
     }
-    $('#samples').find('#' + v).find('.template').remove();
+    $('#' + v).find('.template').remove();
 });
 
 $('.gallery').each(function() {
@@ -78,60 +73,39 @@ $('.gallery').each(function() {
     });
 });
 
-$('#calcPrice').on('submit', function(e) {
+$('#priceCalc').submit(function(e) {
     e.preventDefault();
-});
+    var no = $('#charNo').val();
+    var typeP = parseInt($('#type_s').val());
+    var styleP = parseInt($('#style_s').val());
+    var base = typeP + styleP;
 
-var stylePart;
-var typePart;
-const styleSelect = new mdc.select.MDCSelect(document.querySelector('#styleSelect'));
-styleSelect.listen('change', () => {
-  stylePart = styleSelect.value;
-  return stylePart;
-});
-
-const typeSelect = new mdc.select.MDCSelect(document.querySelector('#typeSelect'));
-typeSelect.listen('change', () => {
-    typePart = typeSelect.value;
-    return typePart;
-});
-
-
-$('#submitBtn').on('click', function() {
-    var count = $('#count').val();
-    var total;
-    typePart = parseInt(typePart,10);
-    stylePart = parseInt(stylePart,10);
-    if (count > 0) {
-        var base = stylePart + typePart;
-
-        if (count == 1) {
-            total = base;
-        }
-        else if (count > 1) {
-            total = base + ((count - 1) * (base * 0.75));
-            total = total.toFixed(2);
-        }
-
-        $('#total').text(total);
-        $('#result').slideDown();
+    if(no > 1) {
+        var base = typeP + styleP;
+        var total = base + ((no-1) * (base*0.75));
     }
+    
     else {
-        $('#result').slideUp();
+        total = base;
     }
+
+   $('.result').find('span').text(total+'$');
+   if(no>=1) {
+       $('.result').slideDown();
+   }
+   else {
+       $('.result').slideUp();
+   }
 });
 
-var personal = [{
+var works = [{
     'title': 'IDLC B-side',
     'info': {
         'img': 'idlcbside.jpg',
         'date': 'February 2017',
         'link': {
             'digital': 'https://gum.co/AuGO',
-            'print': {
-                'status': 'in stock',
-                'href': 'http://breakfastb.storenvy.com/products/21348635-i-dont-like-coffee-b-side'
-            }
+            'print': 'http://breakfastb.storenvy.com/products/21348635-i-dont-like-coffee-b-side'
         },
         'desc': 'A sequel to my first doujin (IDLC). An assortment of comics/doodles. 16p'
     }
@@ -151,11 +125,7 @@ var personal = [{
         'img': 'sd.png',
         'date': 'June 2017',
         'link': {
-            'digital': 'https://gumroad.com/l/ppyVX',
-            'print': {
-                'status': 'out of stock',
-                'href': 'http://breakfastb.storenvy.com/products/21348551-summer-days'
-            }
+            'digital': 'https://gumroad.com/l/ppyVX'
         },
         'desc': 'My first printed original comic. Focuses on Ayu, a mergirl, and Mia, a catgirl, who have been childhood friends.'
     }
@@ -180,9 +150,7 @@ var personal = [{
         },
         'desc': "Submission to Lilies Anthology vol2 that didn't make it. A story about Mira, a fallen star, and Sophie, the girl who falls in love with her"
     }
-}];
-
-var assorted = [{
+},{
     'title': 'getaway',
     'info': {
         'img': 'getaway.png',
@@ -199,85 +167,23 @@ var assorted = [{
         'date': 'August 2016',
         'link': {
             'read@tapas': 'https://tapas.io/episode/429047',
-            'print': {
-                'status': 'in stock',
-                'href': 'http://www.lulu.com/shop/lilies-anthology/lilies-vol-1-water-lily/paperback/product-23033256.html'
-            }
+            'print': 'http://www.lulu.com/shop/lilies-anthology/lilies-vol-1-water-lily/paperback/product-23033256.html'
         },
         'desc': "My submission to <a href='http://liliesanthology.tumblr.com/'>Lilies Anthology</a> vol.1! The theme was water. The story follows Ran, an intrepid lifeguard, and Meri, a shy college student."
     }
 }];
 
-$.each(personal, function(k, v) {
-    var card = $('#personalList').find('.template').clone().removeClass('template');
-    card.find('.mdc-card__title').text(v.title);
-    card.find('.mdc-card__media').css('background-image', 'url(img/works/' + v.info.img + ')');
-    card.find('.mdc-card__subtitle').text(v.info.date);
-    card.find('.mdc-card__supporting-text').html(v.info.desc);
-    $.each(v.info.link, function(l, m) {
-        var btn = card.find('.work-link').clone().removeClass('hidden');
-        btn.find('.mdc-button').find('.text').text(l);
-        if (m.length > 0) {
-            btn.attr('href', m);
-        }
-        else {
-            btn.attr('href', m.href);
-        }
-        btn.appendTo(card.find('.buttons'));
-
-        if (m.status != null) {
-            var badge = btn.find('.badge').clone().removeClass('hidden');
-            badge.text(m.status);
-            badge.appendTo(btn.find('.mdc-button'));
-        }
-
-        card.find('.work-link.hidden').remove();
+$.each(works,function(k, v) {
+    var card = $('#works').find('.card-deck').children('.template').clone().removeClass('template');
+    card.find('.card-title').text(v.title);
+    card.find('.card-subtitle').text(v.info.date);
+    card.find('.card-text').html(v.info.desc);
+    card.find('.card-img-top').attr('src','img/works/'+v.info.img);
+    $.each(v.info.link,function(l,m) {
+        var badge = card.find('.card-footer').find('.template').clone().removeClass('template');
+        badge.find('a').attr('href',m);
+        badge.find('a').text(l);
+        badge.appendTo(card.find('.card-footer'));
     });
-    card.appendTo($('#personalList').find('.works-list'));
-    $('.work-list').find('.template').remove();
-});
-
-$.each(assorted, function(k, v) {
-    var card = $('#miscList').find('.template').clone().removeClass('template');
-    card.find('.mdc-card__title').text(v.title);
-    card.find('.mdc-card__media').css('background-image', 'url(img/works/' + v.info.img + ')');
-    card.find('.mdc-card__subtitle').text(v.info.date);
-    card.find('.mdc-card__supporting-text').html(v.info.desc);
-    $.each(v.info.link, function(l, m) {
-        var btn = card.find('.work-link').clone().removeClass('hidden');
-        btn.find('.mdc-button').find('.text').text(l);
-        if (m.length > 0) {
-            btn.attr('href', m);
-        }
-        else {
-            btn.attr('href', m.href);
-        }
-        btn.appendTo(card.find('.buttons'));
-
-        if (m.status != null) {
-            var badge = btn.find('.badge').clone().removeClass('hidden');
-            badge.text(m.status);
-            badge.appendTo(btn.find('.mdc-button'));
-        }
-
-        card.find('.work-link.hidden').remove();
-    });
-    card.appendTo($('#miscList').find('.works-list'));
-    $('.work-list').find('.template').remove();
-});
-
-$('#header a').on('click', function(event) {
-    var headerHeight = $('#header').height();
-    var target = $(this).attr('href'); //Get the target
-    var scrollToPosition = $(target).offset().top - headerHeight;
-
-    $('html').animate({ 'scrollTop': scrollToPosition }, 600, function(target) {
-        //.location.hash = target;
-    });
-
-    //event.preventDefault();
-});
-
-$(window).on('load resize', function() {
-    $('#top').css('padding-top', $('#header').height());
-});
+    card.appendTo($('#works .card-deck'));
+})

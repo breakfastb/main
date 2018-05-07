@@ -1,64 +1,54 @@
-<!DOCTYPE html>
-<html class="mdc-typography">
+<!doctype html>
+<html lang="en">
 
 <head>
 	<meta charset="utf-8">
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<title>breakfastb</title>
-	<link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
-	<link rel="stylesheet" href="magnific-popup.css">
-	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 	<script src="https://use.fontawesome.com/24a5480fda.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="magnific-popup.css">
+
+	<title>breakfastb</title>
 </head>
 
 <body>
-	<div id="load">
-		<img src="img/spinner.gif">
-	</div>
+	<nav class="navbar sticky-top navbar-light bg-light navbar-expand-lg">
+		<a class="navbar-brand" href="#">breakfastb</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+	    	<span class="navbar-toggler-icon"></span>
+	  	</button>
 
-	<header id="header" class="mdc-toolbar mdc-toolbar--fixed mdc-toolbar--waterfall">
-		<div class="mdc-toolbar__row">
-			<section class="mdc-toolbar__section mdc-toolbar__section--align-start">
-				<span class="mdc-toolbar__title">breakfastb</span>
-			</section>
-			<section class="mdc-toolbar__section mdc-toolbar__section--align-end">
-				<nav id="basic-tab-bar" class="mdc-tab-bar">
-					<ul class="toolbar-nav__links">
-						<li>
-							<a href="#commissions" class="toolbar-nav-link toolbar-nav-link--active">commissions</a>
-						</li>
-						<li>
-							<a href="#works" class="toolbar-nav-link toolbar-nav-link--active">works</a>
-						</li>
-						<li>
-							<a href="#about" class="toolbar-nav-link toolbar-nav-link--active">about</a>
-						</li>
-					</ul>
-				</nav>
-			</section>
+		<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+			<ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+				<li class="nav-item">
+					<a class="nav-link" href="#commissions">Commissions</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#works">Works</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#about">About</a>
+				</li>
+			</ul>
 		</div>
-	</header>
-
-	<main class="mdc-typography">
-		<div id="top">
-			<div class="inner">
-				<h1 class="mdc-typography--display1">breakfastb</h1>
-				<h2 class="mdc-typography--subheading1">comics & drawings</h2>
-				<ul class="social">
-					<li>
-						<a href="https://twitter.com/chadolbaki7">
+	</nav>
+	<div class="jumbotron jumbotron-fluid" id="top">
+		<div class="inner">
+			<h1 class="display-4">breakfastb</h1>
+			<ul class="social">
+				<li>
+					<a href="https://twitter.com/chadolbaki7">
 				    	<i class="fa fa-twitter" aria-hidden="true"></i>
 				    </a>
-					</li>
-					<li>
-						<a href="http://breakfastbooty.tumblr.com/">
+				</li>
+				<li>
+					<a href="http://breakfastbooty.tumblr.com/">
 				    	<i class="fa fa-tumblr" aria-hidden="true"></i>
 				    </a>
-					</li>
-					<li>
-						<a href="https://www.patreon.com/breakfastbooty">
+				</li>
+				<li>
+					<a href="https://www.patreon.com/breakfastbooty">
 				    	<svg id="patreon" xmlns="http://www.w3.org/2000/svg"
 					     viewBox="0 0 8 8"
 					     width="20px"
@@ -67,259 +57,190 @@
 						    <path d="M2.32081783.3678855c.869042-.40526652 1.88661925-.47774603 2.80665096-.20727372.80652418.2346745 1.53190822.73363407 2.0426921 1.3983242.5050198.6523156.79854318 1.4641745.82647667 2.28752405.0354711.8511923-.21060967 1.71122356-.6952336 2.4134793-.71030882 1.0518368-1.9482503 1.72713368-3.22254963 1.73950823-.63803645.0008839-1.2760729.00044195-1.91366597 0 .00532067-1.34042898.0004434-2.68085797.00310373-4.0217289.00221694-.50647268.23011877-1.00499028.60921618-1.34131288.36180524-.3279256.85973083-.5002854 1.3474585-.46404565.50457642.03093638.98831357.2859405 1.30267622.68015833.3232304.3968695.46422805.93295272.38131434 1.4376576-.08114014.53122177-.41368172 1.01603898-.87790977 1.2882791-.5373872.3252739-1.2406018.3345548-1.7935076.04021728.00044338.43487706-.0008868.86975412.00044338 1.30463118.4934917.14407512 1.02201113.16838228 1.52392723.0539177.7431196-.16219502 1.4144102-.6174017 1.8444973-1.24187455.40969124-.5855814.59946164-1.31788962.52851943-2.02810043-.06030086-.6514317-.34052257-1.27944013-.78302457-1.7620476-.41013462-.4507872-.95860653-.77561914-1.55363427-.913507-.6837055-.162195-1.42372137-.07866678-2.05200326.23600036C1.64553673 1.7542771.962718 2.8206982.95207668 3.932198.95030312 5.2876532.95163328 6.6435504.9511899 7.99944755c-.3165796.0008839-.63360256.00044195-.95062554.00044195-.0004434-1.32584468.0004434-2.65168938-.0004434-3.97709212-.00443387-.56569374.11306415-1.13227137.3440697-1.6493508C.73215587 1.49662128 1.44778534.7691745 2.32081784.3678855z" />
 						</svg>
 				    </a>
-					</li>
-					<li>
-						<a href="http://breakfastb.storenvy.com/">
+				</li>
+				<li>
+					<a href="http://breakfastb.storenvy.com/">
 				  		<i class="fa fa-shopping-cart" aria-hidden="true"></i>
 				  	</a>
-					</li>
-					<li>
-						<a href="mailto:breakfastb.illust@gmail.com">
+				</li>
+				<li>
+					<a href="mailto:breakfastb.illust@gmail.com">
 				    	<i class="fa fa-envelope" aria-hidden="true"></i>
 				    </a>
-					</li>
-				</ul>
-			</div>
+				</li>
+			</ul>
 		</div>
-
-		<div id="commissions">
-			<div class="container">
-				<h3 class="mdc-typography--headline">Commissions</h3>
-				<div class="alert warning" id="fullSlots">
-					<span>WARNING: slots currently full! Please email me if you'd like to have a slot in the queue!</span>
-				</div>
-				<h4 id="process">process</h4>
-				<div class="indent grid" id="processList">
-					<div class="grid-inner">
-						<div class="cell">
-							<img src="img/process/form.png">
-							<h5>request</h5>
-							<p>Want to commission me? Please contact me either at my Discord (chadolbaegi#3282), <a href="mailto:breakfastb.illust@gmail.com">email</a>, or social media.</p>
-						</div>
-						<div class="cell">
-							<img src="img/process/sketch.png">
-							<h5>sketch</h5>
-							<p>Once approved, I'll send a rough sketch!</p>
-						</div>
-						<div class="cell">
-							<img src="img/process/invoice.png">
-							<h5>invoice</h5>
-							<p>After you approve the sketch, I'll send you an invoice while I finish the final product, and...</p>
-						</div>
-						<div class="cell">
-							<img src="img/process/paid.png">
-							<h5>payment</h5>
-							<p>You receive the final image once payment is sent!</p>
-						</div>
-					</div>
-				</div>
-				<hr>
-				<div class="grid slide" id="slotForm">
-					<div class="grid-inner">
-						<div id="slot">
-							<h4 id="slots">slots</h4>
-							<br>
-							<div id="commSlot" class="indent grid">
-								<div class="grid-inner">
-									<div id="current">
-										<h5>current</h5>
-										<ul class="mdc-list" id="slotList">
-											<li class="mdc-list-item template">
-												<div class="info">
-													<span class="mdc-list-item__text name">
-				    	</span>
-													<span class="mdc-list-item__text__secondary type"></span>
-												</div>
-											</li>
-										</ul>
-									</div>
-									<br>
-									<div id="queue">
-										<h5>queued</h5>
-										<ul class="mdc-list" id="queueList">
-											<li class="mdc-list-item template">
-												<div class="info">
-													<span class="mdc-list-item__text name">
-				    	</span>
-													<span class="mdc-list-item__text__secondary type"></span>
-												</div>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div id="prices" class="slide">
-							<h4>price estimate</h4>
-							<div class="indent">
-								<form id="calcPrice">
-									<div class="grid">
-										<div class="grid-inner">
-											<div class="mdc-form-field">
-												<div class="mdc-text-field" data-mdc-auto-init="MDCTextField">
-													<input class="mdc-text-field__input" type="number" id="count" max="3">
-													<label for="count" class="mdc-floating-label">Character Count</label>
-													<div class="mdc-line-ripple"></div>
-												</div>
-											</div>
-
-											<div class="mdc-select" id="typeSelect">
-												<select class="mdc-select__native-control">
-													<option value="" disabled selected></option>
-													<option value="5">Chibi</option>
-													<option value="10">Waist</option>
-													<option value="15">Bust</option>
-													<option value="20">Fullbody</option>
-												</select>
-												<div class="mdc-select__label">Comm Type</div>
-												<div class="mdc-select__bottom-line"></div>
-											</div>
-											<div class="mdc-select" id="styleSelect">
-												<select class="mdc-select__native-control">
-													<option value="" disabled selected></option>
-													<option value="0">sketch</option>
-													<option value="2">wash</option>
-													<option value="5">full color</option>
-												</select>
-												<div class="mdc-select__label">Comm Style</div>
-												<div class="mdc-select__bottom-line"></div>
-											</div>
-										</div>
-									</div>
-								</form>
-							</div>
-							<button class="mdc-button" id="submitBtn" type="submit">
-									  Submit
-									</button>
-							<br>
-							<div id="result" class="alert basic">
-								<h5>estimate total</h5>
-								<span id="total"></span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<hr>
-				<div id="samples" class="slide">
-					<h4>samples</h4>
-					<div class="indent">
-						<div class="template sample-section">
-							<h5>chibi</h5>
-							<div class="grid gallery">
-								<div class="grid-inner">
-									<div class="cell template">
-										<a href="img/sample/full/0.png"><img src="img/sample/full/0.png" class="img-fluid"></a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div id="works">
-			<div class="container">
-				<h3 class="mdc-typography--headline">works</h3>
-				<br>
-				<h5>personal</h5>
-				<br>
-				<div id="personalList" class="grid">
-					<div class="grid-inner works-list">
-						<div class="mdc-card cell template">
-							<section class="mdc-card__media"></section>
-							<section class="mdc-card__primary">
-								<h1 class="mdc-card__title mdc-card__title--large">Title goes here</h1>
-								<h2 class="mdc-card__subtitle">Subtitle here</h2>
-								<div class="buttons">
-									<a href="#" class="work-link hidden">
-										<button class="mdc-button mdc-button--stroked">
-											<span class="text"></span>
-											<span class="badge hidden"></span>
-										</button>
-									</a>
-								</div>
-							</section>
-							<section class="mdc-card__supporting-text">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-							</section>
-						</div>
-					</div>
-				</div>
-				<hr>
-				<br>
-				<h5>assorted</h5>
-				<br>
-				<div id="miscList" class="grid">
-					<div class="grid-inner works-list">
-						<div class="mdc-card cell template">
-							<section class="mdc-card__media"></section>
-							<section class="mdc-card__primary">
-								<h1 class="mdc-card__title mdc-card__title--large">Title goes here</h1>
-								<h2 class="mdc-card__subtitle">Subtitle here</h2>
-								<div class="buttons">
-									<a href="#" class="work-link hidden">
-										<button class="mdc-button mdc-button--stroked">
-											<span class="text"></span>
-											<span class="badge hidden"></span>
-										</button>
-									</a>
-								</div>
-							</section>
-							<section class="mdc-card__supporting-text">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-							</section>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</main>
-
-	<div id="about">
+	</div>
+	<div class="jumbotron jumbotron-fluid" id="commissions">
 		<div class="container">
-			<div class="grid">
-				<div class="grid-inner">
-					<div class="cell">
-						<h3 class="mdc-typography--headline">about</h3>
-						<h4 class="mdc-typography--subheading1">cappy // breakfastb // chadolbaegi</h4>
-						<br>
-						<p>Hey there! I go by many names but but you can call me any of the above. I'm an LGBT Korean&Japanese American who likes to draw comics and illust mainly focusing on LGBT women. My goal is to create representations that's both respectful and enjoyable.</p>
-						<p>My favorite topics to draw are fluffy, light-hearted and slice-of-life type scenarios.</p>
-						<p>はじめまして！「チャドルバギ」と申します。私はLGBTの韓国と日本のハーフアメリカ人です。色々なLGBT女性の漫画とイラストを描いています。日本語はまだまだので日本語の練習頑張ります！どうぞよろしくお願いします！</p>
-						<h5>stats</h5>
-						<ul id="stats">
-							<li><b>age</b> // 21</li>
-							<li><b>zodiac</b> // libra</li>
-							<li><b>horoscope</b> // rat</li>
-							<li><b>house</b> // hufflepuff</li>
-							<li><b>blood type</b> // O</li>
-							<li><b>mbti</b> // intp</li>
-						</ul>
+			<h1 class="display-6">Commissions</h1>
+			<p class="lead">Current commission status: <span id="status"></span></p>
+			<p class="lead">Feel free to contact me if you'd like a slot in the queue!</p>
+			<br>
+			<h4>Info</h4>
+			<p>If you're interested in commissioning me, you can contact me through Discord (<span class="s">chadolbaegi#3282</span>), <a href="mailto:breakfastb.illust@gmail.com">email</a>, or <a href="https://www.twitter.com/chadolbaki7">twitter</a>.</p>
+			<p>Process:</p>
+			<ul id="process">
+				<li>contact</li>
+				<li>sketch sent</li>
+				<li>invoice sent</li>
+				<li>payment</li>
+				<li>final image sent</li>
+			</ul>
+			<p>I'm pretty flexible in terms of contents I will/won't draw, but I absolutely will not draw illegal/extreme contents (i.e. guro, toddlercon, etc.) Otherwise, message me and we can talk about your request!</p>
+			<br>
+			<h4>Slots</h4>
+			<div id="slot_container" class="d-flex flex-column justify-content-around">
+				<h6>Currently Working</h6>
+				<div class="list-group" id="slots">
+					<div class="list-group-item flex-row align-items-start template">
+						<div class="d-flex w-100 justify-content-between">
+							<h5 class="mb-1">Name</h5>
+						</div>
+						<p class="mb-1">Type</p>
+						<div class="progress">
+							<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 30%"></div>
+						</div>
 					</div>
-					<div class="cell">
-						<img src="img/self.png">
+				</div>
+				<h6>Queued</h6>
+				<div class="list-group" id="queue">
+					<div class="list-group-item flex-row align-items-start template">
+						<div class="d-flex w-100 justify-content-between">
+							<h5 class="mb-1">Name</h5>
+						</div>
+						<p class="mb-1">Type</p>
+					</div>
+				</div>
+			</div>
+			<br>
+			<h4>Prices</h4>
+			<form id="priceCalc">
+				<div class="form-group">
+					<label for="charNo">Number of Characters</label>
+					<input class="form-control" id="charNo" placeholder="Enter a number" type="number" min="1">
+				</div>
+				<div class="form-group">
+					<label for="type_s">Type of Commission</label>
+					<select class="form-control" id="type_s">
+				      <option value="5">chibi</option>
+				      <option value="10">bust</option>
+				      <option value="15">waist</option>
+				      <option value="20">fullbody</option>
+				    </select>
+				</div>
+				<div class="form-group">
+					<label for="style_s">Style of  Commission</label>
+					<select class="form-control" id="style_s">
+				      <option value="0">sketch</option>
+				      <option value="2">wash</option>
+				      <option value="5">fullcolor</option>
+				    </select>
+				</div>
+				<button class="btn btn-primary">Calculate</button>
+			</form>
+			<br>
+			<div class="result">
+				<p>Your total is: <span class="s"></span></p>
+			</div>
+			<br>
+			<br>
+			<h4>Samples</h4>
+			<p>See below for samples :3 If you have any questions, please contact me.</p>
+		</div>
+	</div>
+	<div class="jumbotron sample d-flex flex-row justify-content-around" id="chibi">
+		<div class="container">
+			<h5>Chibi</h5>
+			<p>Best for simple designs.</p>
+			<p>Note: NSFW typically not available for this option!</p>
+			<div class="gallery">
+				<div class="cell template">
+					<a href="img/sample/full/0.png"><img src="img/sample/full/0.png" class="img-fluid"></a>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<img src="img/sample/chibi/0.png">
+		</div>
+	</div>
+	<div class="jumbotron sample d-flex flex-row justify-content-around" id="sketch">
+		<div class="container">
+			<h5>Sketch</h5>
+			<p>B/w sketch (just lines)!</p>
+			<div class="gallery">
+				<div class="cell template">
+					<a href="img/sample/full/0.png"><img src="img/sample/full/0.png" class="img-fluid"></a>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<img src="img/sample/sketch/1.png">
+		</div>
+	</div>
+	<div class="jumbotron sample d-flex flex-row justify-content-around" id="splash">
+		<div class="container">
+			<h5>Wash</h5>
+			<p>Sketch with wash :)</p>
+			<p>Can have monochrome or color!</p>
+			<div class="gallery">
+				<div class="cell template">
+					<a href="img/sample/full/0.png"><img src="img/sample/full/0.png" class="img-fluid"></a>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<img src="img/sample/splash/1.png">
+		</div>
+	</div>
+	<div class="jumbotron sample d-flex flex-row justify-content-around" id="full">
+		<div class="container">
+			<h5>Full color</h5>
+			<p>Full color (+shading)</p>
+			<p>Solid color/transparent/simple backgrounds come free~</p>
+			<div class="gallery">
+				<div class="cell template">
+					<a href="img/sample/full/0.png"><img src="img/sample/full/0.png" class="img-fluid"></a>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<img src="img/sample/full/0.png">
+		</div>
+	</div>
+	<div class="jumbotron jumbotron-fluid" id="works">
+		<div class="container">
+			<h1 class="display-6">Works</h1>
+			<div class="card-deck">
+				<div class="card template">
+					<img class="card-img-top" src="">
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+					</div>
+					<div class="card-footer">
+						<small class="text-muted template"><a href="#">badge</a></small>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+	<div class="jumbotron jumbotron-fluid" id="about">
+		<div class="container">
+			<h1 class="display-6">About</h1>
+			<p>Hey there! I go by many names but but you can call me any of the above. I'm an LGBT Korean&Japanese American who likes to draw comics and illust mainly focusing on LGBT women. My goal is to create representations that's both respectful and enjoyable.</p>
+			<p>My favorite topics to draw are fluffy, light-hearted and slice-of-life type scenarios</p>
+			<p>はじめまして！「チャドルバギ」と申します。僕はLGBTの韓国と日本のハーフアメリカ人です。色々なLGBT女性の漫画とイラストを描いています。日本語はまだまだので日本語の練習頑張ります！どうぞよろしくお願いします！</p>
+			<br>
+		</div>
+	</div>
 
-	<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="jquery.magnific-popup.min.js"></script>
 	<script src="main.js"></script>
-	<script>
-		window.mdc.autoInit();
-		var toolbar = mdc.toolbar.MDCToolbar.attachTo(document.querySelector('.mdc-toolbar'));
-		toolbar.fixedAdjustElement = document.querySelector('.mdc-toolbar-fixed-adjust');
-
-		/*const select = new mdc.select.MDCSelect(document.querySelector('.mdc-select'));
-		select.listen('MDCSelect:change', () => {
-		  alert(`Selected "${select.selectedOptions[0].textContent}" at index ${select.selectedIndex} ` +
-		        `with value "${select.value}"`);
-		});*/
-	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 </body>
 
 </html>
