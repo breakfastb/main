@@ -24,7 +24,7 @@ var slots = [{
     },{
         'name':'wakai',
         'type':'bust fullcolor',
-        'status':0
+        'status':1
     }
 ];
 
