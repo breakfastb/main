@@ -16,7 +16,7 @@ $(window).on('load', function() {
 var slots = [{
         'name':'valkurion7',
         'type':'splash chibis',
-        'status':0
+        'status':1
     },{
         'name': 'FLJ',
         'type':'fb fullcolor',
