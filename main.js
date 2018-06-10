@@ -14,25 +14,21 @@ $(window).on('load', function() {
 });
 
 var slots = [{
-        'name':'valkurion7',
-        'type':'splash chibis',
-        'status':1
-    },{
         'name': 'FLJ',
         'type':'fb fullcolor',
-        'status':1
+        'status':2
     },{
         'name':'wakai',
         'type':'bust fullcolor',
         'status':1
+    },{
+        'name':'tsubamonos',
+        'type':'couple',
+        'status':0
     }
 ];
 
-var queue = [{
-        'name':'tsubamomos',
-        'type':'couple'
-    
-}];
+var queue = [];
 
 var samples = ['chibi', 'sketch', 'splash', 'full'];
 
