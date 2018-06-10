@@ -20,7 +20,7 @@ var slots = [{
     },{
         'name': 'FLJ',
         'type':'fb fullcolor',
-        'status':0
+        'status':1
     },{
         'name':'wakai',
         'type':'bust fullcolor',
