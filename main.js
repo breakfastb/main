@@ -21,10 +21,23 @@ var slots = [{
         'name':'tsubamonos',
         'type':'couple',
         'status':0
+    },{
+        'name':'?',
+        'type':'?',
+        'status':0
     }
 ];
 
-var queue = [];
+var queue = [{
+    'name':'NSFWtongue',
+    'type':'?'
+},{
+    'name':'isabella',
+    'type':'fb wash color'
+},{
+    'name':'mika',
+    'type':'fb full color'
+}];
 
 var samples = ['chibi', 'sketch', 'splash', 'full'];
 
