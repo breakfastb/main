@@ -14,10 +14,6 @@ $(window).on('load', function() {
 });
 
 var slots = [{
-        'name': 'FLJ',
-        'type':'fb fullcolor',
-        'status':2
-    },{
         'name':'wakai',
         'type':'bust fullcolor',
         'status':1
