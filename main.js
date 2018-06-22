@@ -16,7 +16,7 @@ $(window).on('load', function() {
 var slots = [{
         'name':'wakai',
         'type':'bust fullcolor',
-        'status':2
+        'status':3
     },{
         'name':'isabella',
         'type':'fb wash color',
@@ -24,7 +24,7 @@ var slots = [{
     },{
         'name':'mika',
         'type':'fb full color',
-        'status':0
+        'status':1
     }
 ];
 
