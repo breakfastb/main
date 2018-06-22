@@ -30,8 +30,26 @@ var slots = [{
 
 var queue = [
     {
-        'name':'updating',
-        'type':'pls be patient!'
+        'name':'valkyrie@tumblr',
+        'type':'chibi wash couple'
+    },{
+        'name':'@hifumi_g',
+        'type':'fb full color'
+    },{
+        'name':'@rikki g',
+        'type':'fb sketch color'
+    },{
+        'name':'rikki g',
+        'type':'fb sketch color'
+    },{
+        'name':'SiG',
+        'type':'couple art'
+    },{
+        'name':'@notthatapple',
+        'type':'?'
+    },{
+        'name':'SerF(e)',
+        'type':'full color couple'
     }
 ];
 
