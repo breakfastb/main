@@ -39,9 +39,6 @@ var queue = [
         'name':'@rikki g',
         'type':'fb sketch color'
     },{
-        'name':'rikki g',
-        'type':'fb sketch color'
-    },{
         'name':'SiG',
         'type':'couple art'
     },{
@@ -50,6 +47,9 @@ var queue = [
     },{
         'name':'SerF(e)',
         'type':'full color couple'
+    },{
+        'name':'Mike Quijano',
+        'type':'full color fb'
     }
 ];
 
