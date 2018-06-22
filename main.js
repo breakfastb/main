@@ -16,28 +16,24 @@ $(window).on('load', function() {
 var slots = [{
         'name':'wakai',
         'type':'bust fullcolor',
-        'status':1
+        'status':2
     },{
-        'name':'tsubamonos',
-        'type':'couple',
+        'name':'isabella',
+        'type':'fb wash color',
         'status':0
     },{
-        'name':'?',
-        'type':'?',
+        'name':'mika',
+        'type':'fb full color',
         'status':0
     }
 ];
 
-var queue = [{
-    'name':'NSFWtongue',
-    'type':'?'
-},{
-    'name':'isabella',
-    'type':'fb wash color'
-},{
-    'name':'mika',
-    'type':'fb full color'
-}];
+var queue = [
+    {
+        'name':'updating',
+        'type':'pls be patient!'
+    }
+];
 
 var samples = ['chibi', 'sketch', 'splash', 'full'];
 
