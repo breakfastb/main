@@ -53,6 +53,9 @@ var queue = [
     },{
         'name':'Mike Quijano',
         'type':'full color fb'
+    },{
+        'name':'@Nia_pyon',
+        'type':'full color fb'
     }
 ];
 
