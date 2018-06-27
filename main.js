@@ -59,6 +59,9 @@ var queue = [
     },{
         'name':'@BiggusDickus420',
         'type':'unknown'
+    },{
+        'name':'NSFWtongue',
+        'type':'unknown'
     }
 ];
 
