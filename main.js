@@ -62,6 +62,9 @@ var queue = [
     },{
         'name':'NSFWtongue',
         'type':'unknown'
+    },{
+        'name':'Nui the Super Lesbian',
+        'type':'bust wash'
     }
 ];
 
