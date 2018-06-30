@@ -16,23 +16,20 @@ $(window).on('load', function() {
 var slots = [{
         'name':'wakai',
         'type':'bust fullcolor',
-        'status':3
-    },{
-        'name':'isabella',
-        'type':'fb wash color',
-        'status':0
+        'status':5
     },{
         'name':'mika',
         'type':'fb full color',
-        'status':1
+        'status':2
+    },{
+        'name':'valkyrie@tumblr',
+        'type':'chibi sketch couple',
+        'status':0
     }
 ];
 
 var queue = [
     {
-        'name':'valkyrie@tumblr',
-        'type':'chibi wash couple'
-    },{
         'name':'@hifumi_g',
         'type':'fb full color'
     },{
