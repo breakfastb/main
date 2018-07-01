@@ -20,7 +20,7 @@ var slots = [{
     },{
         'name':'mika',
         'type':'fb full color',
-        'status':2
+        'status':4
     },{
         'name':'valkyrie@tumblr',
         'type':'chibi sketch couple',
