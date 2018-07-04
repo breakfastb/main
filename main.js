@@ -16,7 +16,7 @@ $(window).on('load', function() {
 var slots = [{
         'name':'valkyrie@tumblr',
         'type':'chibi sketch couple',
-        'status':0
+        'status':4
     },{
         'name':'@hifumi_g',
         'type':'fb full color',
@@ -24,7 +24,7 @@ var slots = [{
     },{
         'name':'@rikki g',
         'type':'fb sketch color',
-        'status':0
+        'status':3
     }
 ];
 
