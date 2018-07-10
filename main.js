@@ -14,28 +14,22 @@ $(window).on('load', function() {
 });
 
 var slots = [{
-        'name':'valkyrie@tumblr',
-        'type':'chibi sketch couple',
-        'status':4
-    },{
         'name':'@hifumi_g',
         'type':'fb full color',
         'status':0
     },{
-        'name':'@rikki g',
-        'type':'fb sketch color',
-        'status':3
+        'name':'@xiakha',
+        'type':'couple art',
+        'status':0
+    },{
+        'name':'SiG',
+        'type':'couple art',
+        'status':0
     }
 ];
 
 var queue = [
     {
-        'name':'@xiakha',
-        'type':'couple art'
-    },{
-        'name':'SiG',
-        'type':'couple art'
-    },{
         'name':'@notthatapple',
         'type':'?'
     },{
