@@ -35,6 +35,10 @@ var queue = [
     },{
         'name':'SerF(e)',
         'type':'full color couple'
+    },
+    {
+        'name':'yum222',
+        'type':'fb fullcolor x 2'
     },{
         'name':'Mike Quijano',
         'type':'full color fb'
