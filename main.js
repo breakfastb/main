@@ -20,11 +20,11 @@ var slots = [{
     },{
         'name':'@xiakha',
         'type':'couple art',
-        'status':0
+        'status':2
     },{
         'name':'SiG',
         'type':'couple art',
-        'status':0
+        'status':2
     }
 ];
 
