@@ -22,17 +22,14 @@ var slots = [{
         'type':'couple art',
         'status':2
     },{
-        'name':'SiG',
-        'type':'couple art',
-        'status':2
+        'name':'@notthatapple',
+        'type':'?',
+        'status':0
     }
 ];
 
 var queue = [
     {
-        'name':'@notthatapple',
-        'type':'?'
-    },{
         'name':'SerF(e)',
         'type':'full color couple'
     },
