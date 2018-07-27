@@ -18,21 +18,18 @@ var slots = [{
         'type':'fb full color',
         'status':0
     },{
-        'name':'SerF(e)',
-        'type':'full color couple',
-        'status':2
-    },{
         'name':'yum222',
         'type':'fb fullcolor x 2',
+        'status':2
+    },{
+        'name':'Mike Quijano',
+        'type':'full color fb',
         'status':0
     }
 ];
 
 var queue = [
     {
-        'name':'Mike Quijano',
-        'type':'full color fb'
-    },{
         'name':'@Nia_pyon',
         'type':'full color fb'
     },{
