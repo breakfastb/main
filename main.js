@@ -20,11 +20,11 @@ var slots = [{
     },{
         'name':'ohmoke (e)',
         'type':'full color fb',
-        'status':1
+        'status':2
     },{
         'name':'@Nia_pyon',
         'type':'full color fb',
-        'status':2
+        'status':4
     }
 ];
 
