@@ -18,13 +18,13 @@ var slots = [{
         'type':'fb full color',
         'status':0
     },{
-        'name':'Mike Quijano',
+        'name':'ohmoke (e)',
         'type':'full color fb',
-        'status':0
+        'status':1
     },{
         'name':'@Nia_pyon',
         'type':'full color fb',
-        'status':0
+        'status':2
     }
 ];
 
