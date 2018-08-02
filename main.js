@@ -29,6 +29,10 @@ var slots = [{
 ];
 
 var queue = [
+    {
+        'name':'none',
+        'type':'none'
+    }
 ];
 
 var samples = ['chibi', 'sketch', 'splash', 'full'];
