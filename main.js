@@ -18,24 +18,17 @@ var slots = [{
         'type':'fb full color',
         'status':0
     },{
-        'name':'ohmoke (e)',
-        'type':'full color fb',
-        'status':2
+        'name':'@BiggusDickus420',
+        'type':'unknown',
+        'status':0
     },{
-        'name':'@Nia_pyon',
-        'type':'full color fb',
-        'status':4
+       'name':'NSFWtongue',
+       'type':'unknown',
+       'status':0
     }
 ];
 
-var queue = [
-    {
-        'name':'@BiggusDickus420',
-        'type':'unknown'
-    },{
-        'name':'NSFWtongue',
-        'type':'unknown'
-    },{
+var queue = [{
         'name':'Nui the Super Lesbian',
         'type':'bust wash'
     }
