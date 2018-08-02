@@ -18,20 +18,17 @@ var slots = [{
         'type':'fb full color',
         'status':0
     },{
-        'name':'@BiggusDickus420',
-        'type':'unknown',
-        'status':0
-    },{
        'name':'NSFWtongue',
        'type':'unknown',
        'status':0
+    },{
+        'name':'Nui the Super Lesbian',
+        'type':'bust wash',
+        'status':0
     }
 ];
 
-var queue = [{
-        'name':'Nui the Super Lesbian',
-        'type':'bust wash'
-    }
+var queue = [
 ];
 
 var samples = ['chibi', 'sketch', 'splash', 'full'];
