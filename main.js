@@ -14,8 +14,8 @@ $(window).on('load', function() {
 });
 
 var slots = [{
-        'name':'@hifumi_g',
-        'type':'fb full color',
+        'name':'@kirararagg',
+        'type':'?',
         'status':0
     },{
        'name':'NSFWtongue',
