@@ -15,12 +15,12 @@ $(window).on('load', function() {
 
 var slots = [{
         'name':'@kirararagg',
-        'type':'?',
-        'status':0
+        'type':'fb fullcolor',
+        'status':1
     },{
        'name':'NSFWtongue',
        'type':'unknown',
-       'status':0
+       'status':1
     },{
         'name':'Nui the Super Lesbian',
         'type':'bust wash',
