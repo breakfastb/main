@@ -16,11 +16,7 @@ $(window).on('load', function() {
 var slots = [{
         'name':'@kirararagg',
         'type':'fb fullcolor',
-        'status':1
-    },{
-       'name':'NSFWtongue',
-       'type':'unknown',
-       'status':1
+        'status':2
     },{
         'name':'Nui the Super Lesbian',
         'type':'bust wash',
