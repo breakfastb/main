@@ -3,20 +3,12 @@ $(window).on('load', function() {
         $('#load').fadeOut(100);
         $('main').fadeIn(100);
     }, 100);
-
-    if (slots[2].name.length > 1) {
-        $('#status').text('full');
-    }
-
-    else {
-        $('#status').text('open');
-    }
 });
 
 var slots = [{
         'name':'Nui the Super Lesbian',
         'type':'bust wash',
-        'status':0
+        'status':1
     }
 ];
 
