@@ -6,9 +6,9 @@ $(window).on('load', function() {
 });
 
 var slots = [{
-        'name':'Nui the Super Lesbian',
-        'type':'bust wash',
-        'status':1
+        'name':'none',
+        'type':'none',
+        'status':0
     }
 ];
 
