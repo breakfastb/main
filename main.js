@@ -1,21 +1,20 @@
 $(window).on('load', function() {
     setTimeout(function() {
-        $('#load').fadeOut(100);
+        $('#load').fadeOut(300);
         $('main').fadeIn(100);
     }, 100);
 });
 
 var slots = [{
         'name':'none',
-        'type':'none',
-        'status':0
+        'type':'N/A'
     }
 ];
 
 var queue = [
     {
         'name':'none',
-        'type':'none'
+        'type':'N/A'
     }
 ];
 

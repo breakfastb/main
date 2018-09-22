@@ -1,0 +1,165 @@
+:root {
+    --mdc-theme-primary: #007bff;
+    --mdc-theme-p-light: #ffddeb;
+    --mdc-theme-p-dark: #c60055;
+    --mdc-theme-secondary: #40c4ff;
+    --mdc-theme-s-light: #e2f6ff;
+    --mdc-theme-s-dark: #0094cc;
+}
+
+/*General Rules*/
+a, a:hover, a:active, a:focus {
+    outline:none !important;
+    text-decoration:none !important;
+}
+
+.jumbotron {
+    background-size:cover !important;
+    background-repeat:no-repeat;
+    background-color:#fff;
+}
+
+html {
+    height:5000px;
+}
+
+p {
+    margin-bottom:5px;
+}
+
+h4:before {
+    content:'#';
+}
+
+.s {
+    text-decoration:none !important;
+    color:var(--mdc-theme-primary);
+}
+
+.template {
+    display:none !important;
+}
+.jumbotron {
+    margin-bottom:0;
+    padding-bottom:0;
+}
+/*Top*/
+#top {
+    justify-content:center;
+    background-image:url('img/ny.png');
+    height:500px;
+    display:flex;
+    background-attachment:fixed;
+}
+
+#top h1 {
+    color:#fff;
+    font-weight:bold;
+}
+
+.inner {
+    align-self:center;
+}
+
+.social {
+    padding: 0;
+    width: 100%;
+}
+
+.social li {
+    list-style-type: none;
+    display: inline;
+    margin: 0 1rem;
+    font-size: 1.5rem;
+}
+
+.social a {
+    color: #fff;
+}
+
+.social a:hover,
+.social a:hover svg {
+    color: var(--mdc-theme-primary);
+    fill: var(--mdc-theme-primary);
+}
+
+/*Sections*/
+#status {
+    font-weight:bold;
+    text-transform:uppercase;
+}
+
+#process li {
+    display:inline-block;
+    list-style-type:none;
+}
+
+#process li:not(:nth-child(1)):before {
+    content:'→ ';
+}
+p.mb-1 {
+    opacity:.5;
+}
+#slot_container .list-group {
+    flex-direction:row !important;
+    flex:1 !important;
+}
+
+#slot_container .list-group > * {
+    flex-basis:0;
+    flex-grow:1;
+}
+#queue {
+    flex-flow:row wrap;
+}
+#slots .list-group-item, #queue .list-group-item {
+    width:30%;
+    min-width:30%;
+    max-width:30%;
+    overflow:hidden;
+}
+#slots {
+    margin-bottom:1em;
+}
+#commissions {
+    padding-bottom:10px;
+}
+.sample > .container > img {
+    max-height:300px;
+}
+.gallery {
+    display:flex;
+}
+.sample .container:nth-of-type(2) {
+    text-align:center;
+}
+.gallery img {
+    max-height:200px;
+    object-fit:cover;
+}
+.result {
+    display:none;
+}
+#works .card-footer a {
+    padding:0.5em;
+    background:rgba(0,0,0,0.5);
+    border-radius:0.5em;
+    color:#fff;
+    margin:0.1em;
+    transition:150ms;
+}
+
+#works .card-footer a:hover {
+    color: var(--mdc-theme-primary);
+    transition:150ms;
+}
+
+#works .card {
+    min-width:45%;
+    max-width:45%;
+    margin-bottom:1em;
+}
+.card-img-top {
+    height:300px;
+    object-fit:cover;
+}
