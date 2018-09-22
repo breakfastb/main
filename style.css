@@ -7,13 +7,12 @@ body,html, #load {
     width:100%;
     background:#343a40;
     color:#eee;
-    -moz-user-select: none;
-   -khtml-user-select: none;
-   -webkit-user-select: none;
-   -ms-user-select: none;
-   user-select: none;
+/*    -moz-user-select: none;*/
+/*   -khtml-user-select: none;*/
+/*   -webkit-user-select: none;*/
+/*   -ms-user-select: none;*/
+/*   user-select: none;*/
 }
-
 #load {
     z-index:9000;
     position:absolute;
@@ -126,11 +125,11 @@ header .btn {
     background:rgba(0,0,0,0.2);
     padding:10px;
     color:#b3b3b3;
-    -moz-user-select: all;
-   -khtml-user-select: all;
-   -webkit-user-select: all;
-   -ms-user-select: all;
-   user-select: all;
+   /* -moz-user-select: all;*/
+   /*-khtml-user-select: all;*/
+   /*-webkit-user-select: all;*/
+   /*-ms-user-select: all;*/
+   /*user-select: all;*/
 }
 
 .list-group-item {
