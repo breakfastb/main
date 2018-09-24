@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Hind:400,700|Source+Code+Pro" rel="stylesheet"> 
   <script src="https://use.fontawesome.com/24a5480fda.js"></script>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="magnific-popup.css">
@@ -91,14 +92,10 @@
         <p>When you message me, please be sure to include:</p>
         <p class="code">
           Name
-          <br>
-          Request (+references/personality/pose)
-          <br>
-          Paypal email
-          <br>
-          Preferred method of contact
-          <br>
-          Time constraint (if applicable)
+          <br> Request (+references/personality/pose)
+          <br> Paypal email
+          <br> Preferred method of contact
+          <br> Time constraint (if applicable)
         </p>
         <p>Process: contact → sketch → invoice → lines → payment → final image ☆</p>
         <p>Notes:</p>
@@ -244,7 +241,9 @@
       </div>
     </div>
   </section>
+  
   <hr class="border">
+  
   <section id="works">
     <div class="container">
       <h1>Works</h1>
@@ -263,7 +262,9 @@
       </div>
     </div>
   </section>
+  
   <hr class="border">
+  
   <section id="about">
     <div class="container">
       <h1>About</h1>
@@ -274,7 +275,7 @@
       <br>
     </div>
   </section>
-  
+
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="jquery.magnific-popup.min.js"></script>
   <script src="main.js"></script>
@@ -294,13 +295,13 @@
         }
       });
     });
-    
+
     $('.nav-link, .navbar-brand').click(function() {
-    var sectionTo = $(this).attr('href');
-    var adjOffset = ($(sectionTo).offset().top - $('.navbar').height());
-    $('html, body').animate({
-      scrollTop: adjOffset
-    }, 1500);
+      var sectionTo = $(this).attr('href');
+      var adjOffset = ($(sectionTo).offset().top - $('.navbar').height());
+      $('html, body').animate({
+        scrollTop: adjOffset
+      }, 1500);
     });
   </script>
 </body>
