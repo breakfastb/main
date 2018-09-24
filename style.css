@@ -13,6 +13,11 @@ body,html, #load {
 /*   -ms-user-select: none;*/
 /*   user-select: none;*/
 }
+
+body {
+    overflow-x:hidden;
+}
+
 #load {
     z-index:9000;
     position:absolute;
@@ -155,6 +160,7 @@ header .btn {
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
+    justify-content:center;
 }
 
 .card {
@@ -188,6 +194,7 @@ header .btn {
 #works .card-footer {
     padding-bottom: 1rem !important;
 }
+
 #works .card-footer .text-muted > a:first-child {
     margin-left:-5px;
     margin-right: 10px;
@@ -246,4 +253,25 @@ a, a:visited, a:active, a:focus {
 a:hover {
     color:#fff;
     transition:150ms;
+}
+
+.form-control {
+    width: 90%;
+}
+    
+@media (max-width:755px) {
+    hr.border {
+        margin-top:1;
+        margin-bottom:1;
+    }
+    .card {
+        min-width:40%;
+        width:40%;
+    }
+    .container {
+        padding:10px;
+    }
+    #comm .container:first-child {
+        padding-top:30px;
+    }
 }
