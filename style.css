@@ -76,6 +76,8 @@ h5 {
     transition: background-color 150ms;
     background:rgba(0,0,0,0.5);
     z-index:8000;
+    padding-top:10px;
+    padding-bottom:10px;
 }
 
 .navbar-brand {
@@ -149,6 +151,7 @@ header .btn {
     margin:10px;
     border:5px solid #424951;
     min-height:100px;
+    max-height:300px;
 }
 
 .gallery .cell img {
